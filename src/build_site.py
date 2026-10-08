@@ -146,6 +146,7 @@ def build():
     shutil.copy(f"{UP}/a3a05ee6-24hats-logo-black_on_white.svg", f"{OUT}/assets/logo.svg")
     shutil.copy(f"{UP}/e765a83b-image.png", f"{OUT}/assets/logo-white.png")
     shutil.copytree(os.path.join(ROOT,"thumbs","out"), f"{OUT}/assets/thumbs")
+    shutil.copytree(os.path.join(ROOT,"thumbs","out_sq"), f"{OUT}/assets/thumbs-square")
     from PIL import Image
     ic = Image.open(f"{UP}/44857693-image.png").convert("RGBA")
     bbox = ic.getbbox(); ic = ic.crop(bbox)
