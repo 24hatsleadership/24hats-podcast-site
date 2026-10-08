@@ -17,6 +17,9 @@ def split(r):
         return head, guest
     return t, None
 
+def host_line(r):
+    return "Jason Kempf and Chris Wood" if r.get("cohost") else "Jason Kempf"
+
 def initials(g):
     parts = [p for p in g.replace(" and ", " ").split() if p[0].isupper() and not p.endswith(".")]
     return "".join(p[0] for p in parts[:2]) if parts else "24"
@@ -24,9 +27,9 @@ def initials(g):
 BASE = """*{box-sizing:border-box;margin:0}body{width:1280px;height:720px;overflow:hidden;background:#141118;color:#f3f1f8;font-family:Inter,'Helvetica Neue',Arial,sans-serif;position:relative}
 .logo{position:absolute;height:54px}.ep{font-weight:800;letter-spacing:.16em;text-transform:uppercase}"""
 
-def style_a(r, head, guest):  # typographic
-    fs = 84 if len(head) < 42 else 72 if len(head) < 62 else 62
-    g = f'<div style="position:absolute;left:80px;bottom:96px;font-size:40px;font-weight:700;color:#6db0f5">with {esc(guest)}</div>' if guest else '<div style="position:absolute;left:80px;bottom:96px;font-size:34px;font-weight:600;color:#a3b0a0">Jason Kempf</div>'
+def style_a(r, head, guest, fs=None):  # typographic
+    fs = fs or (84 if len(head) < 42 else 72 if len(head) < 62 else 62)
+    g = f'<div style="position:absolute;left:80px;bottom:96px;font-size:40px;font-weight:700;color:#6db0f5">with {esc(guest)}</div>' if guest else '<div style="position:absolute;left:80px;bottom:96px;font-size:34px;font-weight:600;color:#a3b0a0">' + host_line(r) + '</div>'
     return f"""<style>{BASE}
 .glow{{position:absolute;right:-200px;top:-220px;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(97,51,126,.75),transparent 68%)}}
 h1{{position:absolute;left:80px;top:150px;width:1000px;font-size:{fs}px;line-height:1.04;font-weight:800;letter-spacing:-.025em}}
@@ -45,9 +48,9 @@ h1{{position:absolute;left:470px;top:190px;width:740px;font-size:{fs}px;line-hei
 .rule{{position:absolute;left:470px;top:440px;width:120px;height:5px;background:#a77bc7}}</style>
 <div class="badge">{esc(badge)}</div><div class="ep">Episode {r['ep']}</div><div class="name">{sub}</div><h1>{esc(head)}</h1><div class="rule"></div><img class="logo" style="right:80px;bottom:56px" src="{LOGO}">"""
 
-def style_c(r, head, guest):  # bold number
-    fs = 60 if len(head) < 50 else 52
-    sub = f"with {esc(guest)}" if guest else "Jason Kempf"
+def style_c(r, head, guest, fs=None):  # bold number
+    fs = fs or (60 if len(head) < 50 else 52)
+    sub = f"with {esc(guest)}" if guest else host_line(r)
     return f"""<style>{BASE}
 .num{{position:absolute;right:30px;top:-70px;font-size:640px;line-height:1;font-weight:900;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:3px rgba(167,123,199,.55)}}
 .panel{{position:absolute;left:0;bottom:0;width:860px;height:430px;background:#61337e;padding:56px 70px 0 80px}}
@@ -56,6 +59,10 @@ h1{{font-size:{fs}px;line-height:1.06;font-weight:800;letter-spacing:-.02em}}.su
 <div class="num">{r['ep']}</div><div class="ep">Episode {r['ep']}</div><div class="panel"><h1>{esc(head)}</h1><div class="sub">{sub}</div></div><img class="logo" style="right:80px;bottom:56px" src="{LOGO}">"""
 
 STYLES = {"a": style_a, "b": style_b, "c": style_c}
+import random
+def pick(r):  # random but repeatable mix of styles a and c
+    return random.Random(r["ep"] * 7919).choice("ac")
+FIT = {"a": 530, "c": 600}  # max bottom (px) of the title block
 if __name__ == "__main__":
     style, out = sys.argv[1], sys.argv[2]; only = {int(x) for x in sys.argv[3:]}
     os.makedirs(out, exist_ok=True)
@@ -65,7 +72,16 @@ if __name__ == "__main__":
         for r in data:
             if only and r["ep"] not in only: continue
             head, guest = split(r)
-            pg.set_content(f"<!doctype html><html><body>{STYLES[style](r, head, guest)}</body></html>")
-            pg.wait_for_timeout(120)
-            pg.screenshot(path=os.path.join(out, f"ep{r['ep']:02d}-{style}.png"))
+            st = pick(r) if style == "mix" else style
+            fs = None
+            while True:
+                pg.set_content(f"<!doctype html><html><body>{STYLES[st](r, head, guest, fs) if st in 'ac' else STYLES[st](r, head, guest)}</body></html>")
+                pg.wait_for_timeout(80)
+                if st not in FIT: break
+                bottom = pg.evaluate("document.querySelector('h1').getBoundingClientRect().bottom")
+                cur = pg.evaluate("parseFloat(getComputedStyle(document.querySelector('h1')).fontSize)")
+                if bottom <= FIT[st] or cur <= 40: break
+                fs = cur - 4
+            pg.screenshot(path=os.path.join(out, f"ep{r['ep']:02d}.png"))
+            print(r["ep"], st, round(bottom) if st in FIT else "")
         b.close()
