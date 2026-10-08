@@ -1,7 +1,7 @@
 name: Weekly new-episode check
 on:
   schedule:
-    - cron: "17 13 * * 1"
+    - cron: "3 8 * * 6"
   workflow_dispatch:
 permissions:
   contents: write
