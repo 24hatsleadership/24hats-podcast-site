@@ -1,0 +1,30 @@
+name: Weekly new-episode check
+on:
+  schedule:
+    - cron: "17 13 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - id: feed
+        run: echo "added=$(python scripts/check_feed.py)" >> "$GITHUB_OUTPUT"
+      - if: steps.feed.outputs.added != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          B="new-episodes-$(date +%Y%m%d)"
+          git config user.name "episode-bot"
+          git config user.email "episode-bot@users.noreply.github.com"
+          git checkout -b "$B"
+          git add src/data/episodes_pages.json
+          git commit -m "Add ${{ steps.feed.outputs.added }} new episode page(s) from the Substack feed"
+          git push origin "$B"
+          gh pr create --title "New episode page(s) from Substack" --body "Draft pages built from the Substack feed. Review the title and summary, then merge to publish." --base main --head "$B"
