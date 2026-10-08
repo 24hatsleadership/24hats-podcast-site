@@ -101,16 +101,17 @@ def nav(prefix, current):
     li = "".join(f'<li><a href="{prefix}{h}"{" aria-current=\"page\"" if k==current else ""}>{t}</a></li>' for t, h, k in items)
     return f'<nav aria-label="Main"><ul>{li}</ul></nav>'
 
-def page(title, desc, path, body, prefix, current, jsonld=None, robots=None, og_type="website"):
+def page(title, desc, path, body, prefix, current, jsonld=None, robots=None, og_type="website", image=None):
     canonical = f"{SITE}/{path}".replace("//index.html", "/")
     ld = "".join(f'<script type="application/ld+json">{json.dumps(j, ensure_ascii=False)}</script>' for j in (jsonld or []))
+    im = f'<meta property="og:image" content="{image}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{image}">' if image else ""
     rb = f'<meta name="robots" content="{robots}">' if robots else ""
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)}</title><meta name="description" content="{esc(desc)}">{rb}
 <link rel="canonical" href="{canonical}">
 <link rel="icon" href="{prefix}assets/favicon.png"><link rel="apple-touch-icon" href="{prefix}assets/apple-touch-icon.png">
-<meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:type" content="{og_type}"><meta property="og:url" content="{canonical}"><meta property="og:site_name" content="{NAME}">
+<meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:type" content="{og_type}"><meta property="og:url" content="{canonical}"><meta property="og:site_name" content="{NAME}">{im}
 <meta name="theme-color" content="#141118"><style>{CSS}</style>{ld}</head>
 <body><a class="skip" href="#main">Skip to content</a>
 <header class="site"><div class="wrap"><a class="brand" href="{prefix}index.html" aria-label="24 Hats Leadership Podcast home"><img src="{prefix}assets/logo-white.png" alt="24 Hats Leadership"></a>{nav(prefix, current)}</div></header>
@@ -144,6 +145,7 @@ def build():
     os.makedirs(os.path.join(OUT, "assets"))
     shutil.copy(f"{UP}/a3a05ee6-24hats-logo-black_on_white.svg", f"{OUT}/assets/logo.svg")
     shutil.copy(f"{UP}/e765a83b-image.png", f"{OUT}/assets/logo-white.png")
+    shutil.copytree(os.path.join(ROOT,"thumbs","out"), f"{OUT}/assets/thumbs")
     from PIL import Image
     ic = Image.open(f"{UP}/44857693-image.png").convert("RGBA")
     bbox = ic.getbbox(); ic = ic.crop(bbox)
@@ -238,7 +240,7 @@ def build():
         if r["summary"]: ld["description"] = clean(r["summary"])
         if r["substack"]: ld["associatedMedia"] = {"@type": "AudioObject", "contentUrl": r["substack"]}
         indexable = has_body(r)
-        write(f"episodes/{r['slug']}/index.html", page(mt, desc, ep_url(r), body, "../../", "episodes", [ld], robots=None if indexable else "noindex,follow", og_type="article"))
+        write(f"episodes/{r['slug']}/index.html", page(mt, desc, ep_url(r), body, "../../", "episodes", [ld], robots=None if indexable else "noindex,follow", og_type="article", image=f"{SITE}/assets/thumbs/ep{r['ep']:02d}.jpg"))
         if indexable: sitemap.append((ep_url(r), "0.6"))
 
     today = date.today().isoformat()
