@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://24hatsleadership.github.io/24hats-podcast-site/sitemap.xml
