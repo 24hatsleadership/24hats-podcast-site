@@ -351,10 +351,15 @@
   "slug": "what-does-it-mean-to-fight-for-the-greatest-good-of-others",
   "path": "/episodes/what-does-it-mean-to-fight-for-the-greatest-good-of-others",
   "meta_title": "What does it mean to fight for the greatest good of others?",
-  "summary": "",
+  "summary": "Jason and Chris explain what fighting for the highest good of others means: balancing support and challenge, knowing your tendencies, and helping people grow in ways they want.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"What does it mean to fight for the greatest good of others?\", \"url\": \"{SITE}/episodes/what-does-it-mean-to-fight-for-the-greatest-good-of-others\", \"datePublished\": \"2023-02-08\", \"timeRequired\": \"PT21M46S\", \"episodeNumber\": 65, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"What does it mean to fight for the greatest good of others?\", \"url\": \"{SITE}/episodes/what-does-it-mean-to-fight-for-the-greatest-good-of-others\", \"datePublished\": \"2023-02-08\", \"timeRequired\": \"PT21M46S\", \"episodeNumber\": 65, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Pair support with challenge",
+   "Know your own tendencies as a leader",
+   "The next level is not always a promotion"
+  ]
  },
  {
   "ep": 64,
@@ -368,10 +373,15 @@
   "slug": "the-working-genius-why-we-get-things-done-the-way-we-do",
   "path": "/episodes/the-working-genius-why-we-get-things-done-the-way-we-do",
   "meta_title": "The Working Genius: why we get things done the way we do",
-  "summary": "",
+  "summary": "Jason walks through the Working Genius model from Patrick Lencioni, six types of work that either energize or drain you, and how knowing the difference helps a team celebrate each other's strengths.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"The Working Genius: why we get things done the way we do\", \"url\": \"{SITE}/episodes/the-working-genius-why-we-get-things-done-the-way-we-do\", \"datePublished\": \"2023-02-01\", \"timeRequired\": \"PT24M44S\", \"episodeNumber\": 64, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"The Working Genius: why we get things done the way we do\", \"url\": \"{SITE}/episodes/the-working-genius-why-we-get-things-done-the-way-we-do\", \"datePublished\": \"2023-02-01\", \"timeRequired\": \"PT24M44S\", \"episodeNumber\": 64, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Know your two geniuses and two frustrations",
+   "A team needs all six types of work covered",
+   "Lean into strengths instead of guilt over weaknesses"
+  ]
  },
  {
   "ep": 62,
@@ -385,10 +395,15 @@
   "slug": "annual-leadership-rhythms-how-to-know-what-is-missing",
   "path": "/episodes/annual-leadership-rhythms-how-to-know-what-is-missing",
   "meta_title": "Annual leadership rhythms: how to know what is missing",
-  "summary": "",
+  "summary": "Jason and Chris cover annual leadership rhythms: setting goals on a calendar that fits your business, stepping up to the big picture view, and planning real rest.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Annual leadership rhythms: how to know what is missing\", \"url\": \"{SITE}/episodes/annual-leadership-rhythms-how-to-know-what-is-missing\", \"datePublished\": \"2023-01-25\", \"timeRequired\": \"PT50M43S\", \"episodeNumber\": 62, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Annual leadership rhythms: how to know what is missing\", \"url\": \"{SITE}/episodes/annual-leadership-rhythms-how-to-know-what-is-missing\", \"datePublished\": \"2023-01-25\", \"timeRequired\": \"PT50M43S\", \"episodeNumber\": 62, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Set annual goals on a year that fits your business",
+   "Step out of the daily grind to see the big picture",
+   "Plan rest and renewal on the calendar"
+  ]
  },
  {
   "ep": 61,
@@ -402,10 +417,15 @@
   "slug": "quarterly-leadership-rhythms-mastermind-and-networking-groups",
   "path": "/episodes/quarterly-leadership-rhythms-mastermind-and-networking-groups",
   "meta_title": "Quarterly leadership rhythms: mastermind and networking groups",
-  "summary": "",
+  "summary": "Jason and Chris explain why breaking annual goals into quarterly milestones works, using a hiring example, and encourage joining a mastermind or networking group.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Quarterly leadership rhythms: mastermind and networking groups\", \"url\": \"{SITE}/episodes/quarterly-leadership-rhythms-mastermind-and-networking-groups\", \"datePublished\": \"2023-01-18\", \"timeRequired\": \"PT51M30S\", \"episodeNumber\": 61, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Quarterly leadership rhythms: mastermind and networking groups\", \"url\": \"{SITE}/episodes/quarterly-leadership-rhythms-mastermind-and-networking-groups\", \"datePublished\": \"2023-01-18\", \"timeRequired\": \"PT51M30S\", \"episodeNumber\": 61, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Break the annual goal into quarters",
+   "Work backward from your target date",
+   "Find a group that holds you accountable"
+  ]
  },
  {
   "ep": 60,
@@ -419,10 +439,15 @@
   "slug": "weekly-leadership-rhythms-goal-obstacles-and-obstructions",
   "path": "/episodes/weekly-leadership-rhythms-goal-obstacles-and-obstructions",
   "meta_title": "Weekly leadership rhythms: goal obstacles and obstructions",
-  "summary": "",
+  "summary": "Jason and Chris continue a series on leadership rhythms with weekly planning, and talk through goal obstacles, including setting goals too big or too small and being free to change them.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Weekly leadership rhythms: goal obstacles and obstructions\", \"url\": \"{SITE}/episodes/weekly-leadership-rhythms-goal-obstacles-and-obstructions\", \"datePublished\": \"2023-01-11\", \"timeRequired\": \"PT57M40S\", \"episodeNumber\": 60, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Weekly leadership rhythms: goal obstacles and obstructions\", \"url\": \"{SITE}/episodes/weekly-leadership-rhythms-goal-obstacles-and-obstructions\", \"datePublished\": \"2023-01-11\", \"timeRequired\": \"PT57M40S\", \"episodeNumber\": 60, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Set aside a regular distraction-free time to plan your week",
+   "Lead yourself first, then others",
+   "Goals can be adjusted when life changes"
+  ]
  },
  {
   "ep": 59,
@@ -436,10 +461,15 @@
   "slug": "intentionality-and-not-waiting-until-it-is-too-late-sean-daniels",
   "path": "/episodes/intentionality-and-not-waiting-until-it-is-too-late-sean-daniels",
   "meta_title": "Intentionality and not waiting until it is too late: Sean Daniels",
-  "summary": "",
+  "summary": "Realtor Sean Daniels shares how he left a long rut, built his own real estate business, and urges listeners to hit play now instead of waiting until it is too late.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Intentionality and not waiting until it is too late: Sean Daniels\", \"url\": \"{SITE}/episodes/intentionality-and-not-waiting-until-it-is-too-late-sean-daniels\", \"datePublished\": \"2023-01-04\", \"timeRequired\": \"PT59M42S\", \"episodeNumber\": 59, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Intentionality and not waiting until it is too late: Sean Daniels\", \"url\": \"{SITE}/episodes/intentionality-and-not-waiting-until-it-is-too-late-sean-daniels\", \"datePublished\": \"2023-01-04\", \"timeRequired\": \"PT59M42S\", \"episodeNumber\": 59, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Take one small step each week",
+   "Ask people you admire to sit down with you",
+   "Cut dead weight before it is too late"
+  ]
  },
  {
   "ep": 57,
@@ -453,10 +483,15 @@
   "slug": "finding-strength-on-the-other-side-of-struggle-dr-dee-bonney",
   "path": "/episodes/finding-strength-on-the-other-side-of-struggle-dr-dee-bonney",
   "meta_title": "Finding strength on the other side of struggle: Dr. Dee Bonney",
-  "summary": "",
+  "summary": "Jason shares a two column list of joyful moments and lessons, then Dr. Dee Bonney describes leaving the ER for a faith-based membership practice and his own recovery.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Finding strength on the other side of struggle: Dr. Dee Bonney\", \"url\": \"{SITE}/episodes/finding-strength-on-the-other-side-of-struggle-dr-dee-bonney\", \"datePublished\": \"2022-12-21\", \"timeRequired\": \"PT57M49S\", \"episodeNumber\": 57, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Finding strength on the other side of struggle: Dr. Dee Bonney\", \"url\": \"{SITE}/episodes/finding-strength-on-the-other-side-of-struggle-dr-dee-bonney\", \"datePublished\": \"2022-12-21\", \"timeRequired\": \"PT57M49S\", \"episodeNumber\": 57, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "List moments of joy and what they taught you",
+   "Avoid debt when starting a business",
+   "Honest stories build trust with others"
+  ]
  },
  {
   "ep": 56,
@@ -470,10 +505,15 @@
   "slug": "a-year-of-growth-at-resources-of-hope-renae-furnee-returns",
   "path": "/episodes/a-year-of-growth-at-resources-of-hope-renae-furnee-returns",
   "meta_title": "A year of growth at Resources of Hope: Renae Furnee returns",
-  "summary": "",
+  "summary": "Renae Furnee returns to share a year of growth at Resources of Hope, a donation-funded nonprofit that added staff this year, and the many ways volunteers and businesses can get involved.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"A year of growth at Resources of Hope: Renae Furnee returns\", \"url\": \"{SITE}/episodes/a-year-of-growth-at-resources-of-hope-renae-furnee-returns\", \"datePublished\": \"2022-12-14\", \"timeRequired\": \"PT56M56S\", \"episodeNumber\": 56, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"A year of growth at Resources of Hope: Renae Furnee returns\", \"url\": \"{SITE}/episodes/a-year-of-growth-at-resources-of-hope-renae-furnee-returns\", \"datePublished\": \"2022-12-14\", \"timeRequired\": \"PT56M56S\", \"episodeNumber\": 56, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Donor-funded work can grow when the community owns it",
+   "Volunteers of every skill can help",
+   "Businesses can partner with local nonprofits"
+  ]
  },
  {
   "ep": 55,
@@ -487,10 +527,15 @@
   "slug": "striking-out-on-your-own-keith-howard",
   "path": "/episodes/striking-out-on-your-own-keith-howard",
   "meta_title": "Striking out on your own: Keith Howard | 24 Hats Leadership",
-  "summary": "",
+  "summary": "Keith Howard, a carpet cleaner with 13 years in the trade, tells why he left an employer over ethics, started his own business, and is adding duct cleaning.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Striking out on your own: Keith Howard\", \"url\": \"{SITE}/episodes/striking-out-on-your-own-keith-howard\", \"datePublished\": \"2022-12-07\", \"timeRequired\": \"PT50M33S\", \"episodeNumber\": 55, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Striking out on your own: Keith Howard\", \"url\": \"{SITE}/episodes/striking-out-on-your-own-keith-howard\", \"datePublished\": \"2022-12-07\", \"timeRequired\": \"PT50M33S\", \"episodeNumber\": 55, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Do what you say you will do for every customer",
+   "Do the job right the first time",
+   "Leave a place that conflicts with your ethics"
+  ]
  },
  {
   "ep": 54,
@@ -504,10 +549,15 @@
   "slug": "overcoming-no-perseverance-and-clear-purpose-with-dave-barnett",
   "path": "/episodes/overcoming-no-perseverance-and-clear-purpose-with-dave-barnett",
   "meta_title": "Overcoming 'no': perseverance and clear purpose with Dave Barnett",
-  "summary": "",
+  "summary": "Jason and Chris unpack the five circles of influence, then Dave Barnett shares how a first rejection from Christian Brothers Automotive became a yes in Greenwood.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Overcoming 'no': perseverance and clear purpose with Dave Barnett\", \"url\": \"{SITE}/episodes/overcoming-no-perseverance-and-clear-purpose-with-dave-barnett\", \"datePublished\": \"2022-11-30\", \"timeRequired\": \"PT50M23S\", \"episodeNumber\": 54, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Overcoming 'no': perseverance and clear purpose with Dave Barnett\", \"url\": \"{SITE}/episodes/overcoming-no-perseverance-and-clear-purpose-with-dave-barnett\", \"datePublished\": \"2022-11-30\", \"timeRequired\": \"PT50M23S\", \"episodeNumber\": 54, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Start influence with yourself",
+   "Work outward: family, team, organization, community",
+   "A no can be a redirect"
+  ]
  },
  {
   "ep": 53,
@@ -521,10 +571,15 @@
   "slug": "dealing-with-hurt-and-the-value-of-mentors-jordan-asbury",
   "path": "/episodes/dealing-with-hurt-and-the-value-of-mentors-jordan-asbury",
   "meta_title": "Dealing with hurt and the value of mentors: Jordan Asbury",
-  "summary": "",
+  "summary": "Jordan Asbury shares how he grew Mia's Home Security without debt or contracts, what he learned from his early mentors, and a painful lesson about sharing financial details with a young employee.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Dealing with hurt and the value of mentors: Jordan Asbury\", \"url\": \"{SITE}/episodes/dealing-with-hurt-and-the-value-of-mentors-jordan-asbury\", \"datePublished\": \"2022-11-23\", \"timeRequired\": \"PT49M37S\", \"episodeNumber\": 53, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Dealing with hurt and the value of mentors: Jordan Asbury\", \"url\": \"{SITE}/episodes/dealing-with-hurt-and-the-value-of-mentors-jordan-asbury\", \"datePublished\": \"2022-11-23\", \"timeRequired\": \"PT49M37S\", \"episodeNumber\": 53, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Grow without debt when you can",
+   "Mentors shape you long after you leave their business",
+   "Be polite and make every customer feel like your only one"
+  ]
  },
  {
   "ep": 52,
@@ -538,10 +593,15 @@
   "slug": "navigating-marketing-options-and-the-70-30-principle",
   "path": "/episodes/navigating-marketing-options-and-the-70-30-principle",
   "meta_title": "Navigating marketing options and the 70:30 principle",
-  "summary": "",
+  "summary": "Jason and Chris sort through marketing options (print, digital, word of mouth), how to judge return, and why the 70:30 principle keeps you in your strengths.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Navigating marketing options and the 70:30 principle\", \"url\": \"{SITE}/episodes/navigating-marketing-options-and-the-70-30-principle\", \"datePublished\": \"2022-11-16\", \"timeRequired\": \"PT58M25S\", \"episodeNumber\": 52, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Navigating marketing options and the 70:30 principle\", \"url\": \"{SITE}/episodes/navigating-marketing-options-and-the-70-30-principle\", \"datePublished\": \"2022-11-16\", \"timeRequired\": \"PT58M25S\", \"episodeNumber\": 52, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Define your marketing goal before spending",
+   "Market in a way that fits who you are",
+   "Aim for about 70 percent of your time in your strengths"
+  ]
  },
  {
   "ep": 50,
@@ -555,10 +615,15 @@
   "slug": "redemptive-stories-big-vision-and-determination-cody-johnson",
   "path": "/episodes/redemptive-stories-big-vision-and-determination-cody-johnson",
   "meta_title": "Redemptive stories, big vision, and determination: Cody Johnson",
-  "summary": "",
+  "summary": "Cody Johnson tells how a racing career ended at 18, followed by failed schools, homelessness, and a hard job, before he started a mobile oil change business.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Redemptive stories, big vision, and determination: Cody Johnson\", \"url\": \"{SITE}/episodes/redemptive-stories-big-vision-and-determination-cody-johnson\", \"datePublished\": \"2022-11-02\", \"timeRequired\": \"PT59M2S\", \"episodeNumber\": 50, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Redemptive stories, big vision, and determination: Cody Johnson\", \"url\": \"{SITE}/episodes/redemptive-stories-big-vision-and-determination-cody-johnson\", \"datePublished\": \"2022-11-02\", \"timeRequired\": \"PT59M2S\", \"episodeNumber\": 50, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Setbacks can redirect you toward your work",
+   "Keep going when plan A falls apart",
+   "Big vision paired with persistence pays off"
+  ]
  },
  {
   "ep": 49,
@@ -640,10 +705,15 @@
   "slug": "premium-customer-experience-and-helping-dreams-come-true-rachel-patter",
   "path": "/episodes/premium-customer-experience-and-helping-dreams-come-true-rachel-patter",
   "meta_title": "Premium customer experience and helping dreams come true: Rachel Patterson",
-  "summary": "",
+  "summary": "Realtor Rachel Patterson talks about two years in real estate and why she treats buying a home as the biggest decision of a family's life, walking with clients through the whole process.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Premium customer experience and helping dreams come true: Rachel Patterson\", \"url\": \"{SITE}/episodes/premium-customer-experience-and-helping-dreams-come-true-rachel-patter\", \"datePublished\": \"2022-09-28\", \"timeRequired\": \"PT55M31S\", \"episodeNumber\": 45, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Premium customer experience and helping dreams come true: Rachel Patterson\", \"url\": \"{SITE}/episodes/premium-customer-experience-and-helping-dreams-come-true-rachel-patter\", \"datePublished\": \"2022-09-28\", \"timeRequired\": \"PT55M31S\", \"episodeNumber\": 45, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Treat a client's biggest purchase with matching care",
+   "Put the client's journey ahead of the sale",
+   "Use a trusted professional for high-stakes decisions"
+  ]
  },
  {
   "ep": 44,
@@ -657,10 +727,15 @@
   "slug": "expanding-your-team-in-elder-law-kim-jewell",
   "path": "/episodes/expanding-your-team-in-elder-law-kim-jewell",
   "meta_title": "Expanding your team in elder law: Kim Jewell",
-  "summary": "",
+  "summary": "Elder law attorney Kim Jewell explains power of attorney, health care directives, and wills, and how she is building staff and systems to serve more families.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Expanding your team in elder law: Kim Jewell\", \"url\": \"{SITE}/episodes/expanding-your-team-in-elder-law-kim-jewell\", \"datePublished\": \"2022-09-22\", \"timeRequired\": \"PT56M3S\", \"episodeNumber\": 44, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Expanding your team in elder law: Kim Jewell\", \"url\": \"{SITE}/episodes/expanding-your-team-in-elder-law-kim-jewell\", \"datePublished\": \"2022-09-22\", \"timeRequired\": \"PT56M3S\", \"episodeNumber\": 44, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Sign a power of attorney before you need it",
+   "Name who speaks for your health care wishes",
+   "Build processes early so you can delegate"
+  ]
  },
  {
   "ep": 43,
@@ -674,10 +749,15 @@
   "slug": "the-e-myth-revisited-thinking-of-your-business-like-a-franchise",
   "path": "/episodes/the-e-myth-revisited-thinking-of-your-business-like-a-franchise",
   "meta_title": "The E-Myth Revisited: thinking of your business like a franchise",
-  "summary": "",
+  "summary": "Jason and Chris use The E-Myth Revisited to ask what it takes to treat your business like a franchise, with repeatable systems and small daily work on the business.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"The E-Myth Revisited: thinking of your business like a franchise\", \"url\": \"{SITE}/episodes/the-e-myth-revisited-thinking-of-your-business-like-a-franchise\", \"datePublished\": \"2022-09-08\", \"timeRequired\": \"PT36M13S\", \"episodeNumber\": 43, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"The E-Myth Revisited: thinking of your business like a franchise\", \"url\": \"{SITE}/episodes/the-e-myth-revisited-thinking-of-your-business-like-a-franchise\", \"datePublished\": \"2022-09-08\", \"timeRequired\": \"PT36M13S\", \"episodeNumber\": 43, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Picture your business as a franchise",
+   "Write down the processes in your head",
+   "Work on the business in 15 minute sprints"
+  ]
  },
  {
   "ep": 42,
@@ -691,10 +771,15 @@
   "slug": "growing-a-business-in-a-new-industry-sam-bolin",
   "path": "/episodes/growing-a-business-in-a-new-industry-sam-bolin",
   "meta_title": "Growing a business in a new industry: Sam Bolin",
-  "summary": "",
+  "summary": "Sam Bolin shares how he stepped into running Crossroads Kombucha in Franklin with little industry experience, and how he learns from others in the field, including competitors.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Growing a business in a new industry: Sam Bolin\", \"url\": \"{SITE}/episodes/growing-a-business-in-a-new-industry-sam-bolin\", \"datePublished\": \"2022-09-01\", \"timeRequired\": \"PT1H2M28S\", \"episodeNumber\": 42, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Growing a business in a new industry: Sam Bolin\", \"url\": \"{SITE}/episodes/growing-a-business-in-a-new-industry-sam-bolin\", \"datePublished\": \"2022-09-01\", \"timeRequired\": \"PT1H2M28S\", \"episodeNumber\": 42, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Ask questions of people who have mastered the craft",
+   "Competitors can become allies",
+   "There is enough room in a market for everyone"
+  ]
  },
  {
   "ep": 41,
@@ -708,10 +793,15 @@
   "slug": "the-peace-index-slowing-down-when-life-speeds-up",
   "path": "/episodes/the-peace-index-slowing-down-when-life-speeds-up",
   "meta_title": "The Peace Index: slowing down when life speeds up",
-  "summary": "",
+  "summary": "Jason and Chris walk through the Peace Index: score purpose, place, provision, personal health, and people from 0 to 100, then average them to see where life feels strained.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"The Peace Index: slowing down when life speeds up\", \"url\": \"{SITE}/episodes/the-peace-index-slowing-down-when-life-speeds-up\", \"datePublished\": \"2022-08-24\", \"timeRequired\": \"PT26M37S\", \"episodeNumber\": 41, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"The Peace Index: slowing down when life speeds up\", \"url\": \"{SITE}/episodes/the-peace-index-slowing-down-when-life-speeds-up\", \"datePublished\": \"2022-08-24\", \"timeRequired\": \"PT26M37S\", \"episodeNumber\": 41, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Score each area honestly, then average the five",
+   "Below 60 percent, ask a trusted person for help",
+   "Clarity alone can lift your peace"
+  ]
  },
  {
   "ep": 40,
@@ -725,10 +815,15 @@
   "slug": "is-every-problem-a-leadership-problem",
   "path": "/episodes/is-every-problem-a-leadership-problem",
   "meta_title": "Is every problem a leadership problem? | 24 Hats Leadership",
-  "summary": "",
+  "summary": "Jason and Chris ask whether every problem is a leadership problem, walking through communication, relationships, alignment, execution, and capacity with real examples.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Is every problem a leadership problem?\", \"url\": \"{SITE}/episodes/is-every-problem-a-leadership-problem\", \"datePublished\": \"2022-08-17\", \"timeRequired\": \"PT47M26S\", \"episodeNumber\": 40, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Is every problem a leadership problem?\", \"url\": \"{SITE}/episodes/is-every-problem-a-leadership-problem\", \"datePublished\": \"2022-08-17\", \"timeRequired\": \"PT47M26S\", \"episodeNumber\": 40, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Keep asking why to find the root problem",
+   "Check capacity before blaming people",
+   "Spend 15 minutes reflecting each day"
+  ]
  },
  {
   "ep": 39,
@@ -742,10 +837,15 @@
   "slug": "culture-trust-and-letting-go-luke-reynolds-and-brett-jones",
   "path": "/episodes/culture-trust-and-letting-go-luke-reynolds-and-brett-jones",
   "meta_title": "Culture, trust, and letting go: Luke Reynolds and Brett Jones",
-  "summary": "",
+  "summary": "Luke Reynolds and Brett Jones describe how a clear company culture and shared vision build trust with their team. They also talk about the hard work of letting go as a founder.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Culture, trust, and letting go: Luke Reynolds and Brett Jones\", \"url\": \"{SITE}/episodes/culture-trust-and-letting-go-luke-reynolds-and-brett-jones\", \"datePublished\": \"2022-08-10\", \"timeRequired\": \"PT1H1M55S\", \"episodeNumber\": 39, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Culture, trust, and letting go: Luke Reynolds and Brett Jones\", \"url\": \"{SITE}/episodes/culture-trust-and-letting-go-luke-reynolds-and-brett-jones\", \"datePublished\": \"2022-08-10\", \"timeRequired\": \"PT1H1M55S\", \"episodeNumber\": 39, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Trust grows when people are aligned with the vision",
+   "Owning mistakes openly builds more trust",
+   "To grow, a founder has to let go of tasks"
+  ]
  },
  {
   "ep": 38,
@@ -776,10 +876,15 @@
   "slug": "the-hope-meter-how-are-you-feeling-about-tomorrow",
   "path": "/episodes/the-hope-meter-how-are-you-feeling-about-tomorrow",
   "meta_title": "The Hope Meter: how are you feeling about tomorrow?",
-  "summary": "",
+  "summary": "Jason and Chris introduce the Hope Meter, a simple scale for how hopeful you feel about tomorrow, then weigh whether now is a smart time to buy a business.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"The Hope Meter: how are you feeling about tomorrow?\", \"url\": \"{SITE}/episodes/the-hope-meter-how-are-you-feeling-about-tomorrow\", \"datePublished\": \"2022-07-27\", \"timeRequired\": \"PT48M21S\", \"episodeNumber\": 37, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"The Hope Meter: how are you feeling about tomorrow?\", \"url\": \"{SITE}/episodes/the-hope-meter-how-are-you-feeling-about-tomorrow\", \"datePublished\": \"2022-07-27\", \"timeRequired\": \"PT48M21S\", \"episodeNumber\": 37, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Ask yourself and your team how hopeful you are",
+   "Test projections at best, middle, and worst case",
+   "Beware of buying yourself a job"
+  ]
  },
  {
   "ep": 36,
@@ -793,10 +898,15 @@
   "slug": "engaging-young-leaders-and-preventing-burnout-dave-beasley",
   "path": "/episodes/engaging-young-leaders-and-preventing-burnout-dave-beasley",
   "meta_title": "Engaging young leaders and preventing burnout: Dave Beasley",
-  "summary": "",
+  "summary": "Dave Beasley, a school resource officer and tennis coach, talks about building relationships with students, keeping young athletes from burning out, and letting go of a tightly planned life.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Engaging young leaders and preventing burnout: Dave Beasley\", \"url\": \"{SITE}/episodes/engaging-young-leaders-and-preventing-burnout-dave-beasley\", \"datePublished\": \"2022-07-20\", \"timeRequired\": \"PT49M6S\", \"episodeNumber\": 36, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Engaging young leaders and preventing burnout: Dave Beasley\", \"url\": \"{SITE}/episodes/engaging-young-leaders-and-preventing-burnout-dave-beasley\", \"datePublished\": \"2022-07-20\", \"timeRequired\": \"PT49M6S\", \"episodeNumber\": 36, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Keep asking young people if they still enjoy it",
+   "Build relationships with students before you need to correct them",
+   "Hold your plans loosely"
+  ]
  },
  {
   "ep": 35,
@@ -827,10 +937,15 @@
   "slug": "helping-kids-feel-safe-and-loved-principal-trael-kelly",
   "path": "/episodes/helping-kids-feel-safe-and-loved-principal-trael-kelly",
   "meta_title": "Helping kids feel safe and loved: Principal Trael Kelly",
-  "summary": "",
+  "summary": "After a talk on choosing the right medium for hard conversations, Principal Trael Kelly shares how he walked 161.7 miles to visit students' homes during COVID.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Helping kids feel safe and loved: Principal Trael Kelly\", \"url\": \"{SITE}/episodes/helping-kids-feel-safe-and-loved-principal-trael-kelly\", \"datePublished\": \"2022-07-06\", \"timeRequired\": \"PT56M35S\", \"episodeNumber\": 34, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Helping kids feel safe and loved: Principal Trael Kelly\", \"url\": \"{SITE}/episodes/helping-kids-feel-safe-and-loved-principal-trael-kelly\", \"datePublished\": \"2022-07-06\", \"timeRequired\": \"PT56M35S\", \"episodeNumber\": 34, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Match the medium to the message",
+   "Serious feedback needs voice or face to face",
+   "Show up where people are"
+  ]
  },
  {
   "ep": 32,
@@ -844,10 +959,15 @@
   "slug": "making-donuts-and-inspiring-fathers-tom-neary",
   "path": "/episodes/making-donuts-and-inspiring-fathers-tom-neary",
   "meta_title": "Making donuts and inspiring fathers: Tom Neary",
-  "summary": "",
+  "summary": "Tom Neary of Dad's Donut House explains why he chose the slow path with no loan, how weekly donut dates with his kids sparked the idea, and how he hopes to encourage fathers to be present.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Making donuts and inspiring fathers: Tom Neary\", \"url\": \"{SITE}/episodes/making-donuts-and-inspiring-fathers-tom-neary\", \"datePublished\": \"2022-06-22\", \"timeRequired\": \"PT56M30S\", \"episodeNumber\": 32, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Making donuts and inspiring fathers: Tom Neary\", \"url\": \"{SITE}/episodes/making-donuts-and-inspiring-fathers-tom-neary\", \"datePublished\": \"2022-06-22\", \"timeRequired\": \"PT56M30S\", \"episodeNumber\": 32, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Ask whether you are being reactive or proactive",
+   "Ask people what it is like to be on the other side of you",
+   "Choose the long game when your family comes first"
+  ]
  },
  {
   "ep": 30,
@@ -878,10 +998,15 @@
   "slug": "what-is-your-why-discovering-your-mission-as-a-leader",
   "path": "/episodes/what-is-your-why-discovering-your-mission-as-a-leader",
   "meta_title": "What is your why? Discovering your mission as a leader",
-  "summary": "",
+  "summary": "Jason and Chris explain how to find your why, using a four-part sweet spot, a 25 minutes and 25 words exercise, and a Peace Index check-in.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"What is your why? Discovering your mission as a leader\", \"url\": \"{SITE}/episodes/what-is-your-why-discovering-your-mission-as-a-leader\", \"datePublished\": \"2022-06-01\", \"timeRequired\": \"PT44M41S\", \"episodeNumber\": 29, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"What is your why? Discovering your mission as a leader\", \"url\": \"{SITE}/episodes/what-is-your-why-discovering-your-mission-as-a-leader\", \"datePublished\": \"2022-06-01\", \"timeRequired\": \"PT44M41S\", \"episodeNumber\": 29, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Money alone makes an empty why",
+   "Write 25 words in 25 minutes, then kill, combine, keep",
+   "Test your why with people who know you"
+  ]
  },
  {
   "ep": 28,
@@ -895,10 +1020,15 @@
   "slug": "pursuing-what-matters-most-in-the-face-of-overwhelm-dr-brendon-sweeney",
   "path": "/episodes/pursuing-what-matters-most-in-the-face-of-overwhelm-dr-brendon-sweeney",
   "meta_title": "Pursuing what matters most in the face of overwhelm: Dr. Brendon Sweeney",
-  "summary": "",
+  "summary": "Jason and Chris discuss intentional leadership, then Dr. Brendon Sweeney describes leaving a busy family practice for nursing home care to protect his time and family.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Pursuing what matters most in the face of overwhelm: Dr. Brendon Sweeney\", \"url\": \"{SITE}/episodes/pursuing-what-matters-most-in-the-face-of-overwhelm-dr-brendon-sweeney\", \"datePublished\": \"2022-05-25\", \"timeRequired\": \"PT51M41S\", \"episodeNumber\": 28, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Pursuing what matters most in the face of overwhelm: Dr. Brendon Sweeney\", \"url\": \"{SITE}/episodes/pursuing-what-matters-most-in-the-face-of-overwhelm-dr-brendon-sweeney\", \"datePublished\": \"2022-05-25\", \"timeRequired\": \"PT51M41S\", \"episodeNumber\": 28, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Intentions matter less than actions",
+   "Plan ahead instead of only reacting",
+   "Protect time for the work you love"
+  ]
  },
  {
   "ep": 27,
@@ -929,10 +1059,15 @@
   "slug": "understanding-others-paths-fire-chief-jeremy-pell",
   "path": "/episodes/understanding-others-paths-fire-chief-jeremy-pell",
   "meta_title": "Understanding others' paths: Fire Chief Jeremy Pell",
-  "summary": "",
+  "summary": "Fire Chief Jeremy Pell shares his mission to serve, how mentors shaped him, and why admitting mistakes and asking for help is a strength.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Understanding others' paths: Fire Chief Jeremy Pell\", \"url\": \"{SITE}/episodes/understanding-others-paths-fire-chief-jeremy-pell\", \"datePublished\": \"2022-05-11\", \"timeRequired\": \"PT55M41S\", \"episodeNumber\": 26, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Understanding others' paths: Fire Chief Jeremy Pell\", \"url\": \"{SITE}/episodes/understanding-others-paths-fire-chief-jeremy-pell\", \"datePublished\": \"2022-05-11\", \"timeRequired\": \"PT55M41S\", \"episodeNumber\": 26, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "A clear mission makes decisions easier",
+   "Admit mistakes and ask for help",
+   "Walk in your team's shoes to lead them well"
+  ]
  },
  {
   "ep": 25,
@@ -946,10 +1081,15 @@
   "slug": "startup-finances-reserves-and-clear-expectations",
   "path": "/episodes/startup-finances-reserves-and-clear-expectations",
   "meta_title": "Startup finances, reserves, and clear expectations",
-  "summary": "",
+  "summary": "Jason and Chris talk startup money: keep a six to twelve month reserve, watch scarcity thinking, and lean on coaches and lunch conversations with people who have done it.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Startup finances, reserves, and clear expectations\", \"url\": \"{SITE}/episodes/startup-finances-reserves-and-clear-expectations\", \"datePublished\": \"2022-05-04\", \"timeRequired\": \"PT50M31S\", \"episodeNumber\": 25, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Startup finances, reserves, and clear expectations\", \"url\": \"{SITE}/episodes/startup-finances-reserves-and-clear-expectations\", \"datePublished\": \"2022-05-04\", \"timeRequired\": \"PT50M31S\", \"episodeNumber\": 25, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Build a 6 to 12 month reserve first",
+   "Scarcity thinking clouds your decisions",
+   "Take an experienced owner to lunch"
+  ]
  },
  {
   "ep": 24,
@@ -963,10 +1103,15 @@
   "slug": "starting-from-scratch-and-the-role-of-passion-matt-simon",
   "path": "/episodes/starting-from-scratch-and-the-role-of-passion-matt-simon",
   "meta_title": "Starting from scratch and the role of passion: Matt Simon",
-  "summary": "",
+  "summary": "Matt Simon talks about building and selling a business, why passion often grows after you start, and why showing up and following up consistently matters in sales. He also shares his new options trading software.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Starting from scratch and the role of passion: Matt Simon\", \"url\": \"{SITE}/episodes/starting-from-scratch-and-the-role-of-passion-matt-simon\", \"datePublished\": \"2022-04-27\", \"timeRequired\": \"PT54M46S\", \"episodeNumber\": 24, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Starting from scratch and the role of passion: Matt Simon\", \"url\": \"{SITE}/episodes/starting-from-scratch-and-the-role-of-passion-matt-simon\", \"datePublished\": \"2022-04-27\", \"timeRequired\": \"PT54M46S\", \"episodeNumber\": 24, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Passion can grow as you get good at the work",
+   "Consistency in showing up and following up wins",
+   "Partner with experts where your own skills end"
+  ]
  },
  {
   "ep": 23,
@@ -980,10 +1125,15 @@
   "slug": "finding-your-entrepreneurial-fit",
   "path": "/episodes/finding-your-entrepreneurial-fit",
   "meta_title": "Finding your entrepreneurial fit | 24 Hats Leadership Podcast",
-  "summary": "",
+  "summary": "Jason and Chris talk through finding the right business for you: hobby versus job, strengths tools, mentors over lunch, and the real risks of starting.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Finding your entrepreneurial fit\", \"url\": \"{SITE}/episodes/finding-your-entrepreneurial-fit\", \"datePublished\": \"2022-04-20\", \"timeRequired\": \"PT49M26S\", \"episodeNumber\": 23, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Finding your entrepreneurial fit\", \"url\": \"{SITE}/episodes/finding-your-entrepreneurial-fit\", \"datePublished\": \"2022-04-20\", \"timeRequired\": \"PT49M26S\", \"episodeNumber\": 23, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Ask others what you light up about",
+   "Buy a mentor lunch and look for one nugget",
+   "Try something small to beat analysis paralysis"
+  ]
  },
  {
   "ep": 22,
@@ -997,10 +1147,15 @@
   "slug": "the-leader-mindset-in-a-shifting-culture-bryan-ottney",
   "path": "/episodes/the-leader-mindset-in-a-shifting-culture-bryan-ottney",
   "meta_title": "The leader mindset in a shifting culture: Bryan Ottney",
-  "summary": "",
+  "summary": "Jason and Chris cover support and challenge, right people in the right seats, and clear expectations, then talk with Bryan Ottney about family business and ministry.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"The leader mindset in a shifting culture: Bryan Ottney\", \"url\": \"{SITE}/episodes/the-leader-mindset-in-a-shifting-culture-bryan-ottney\", \"datePublished\": \"2022-04-13\", \"timeRequired\": \"PT52M40S\", \"episodeNumber\": 22, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"The leader mindset in a shifting culture: Bryan Ottney\", \"url\": \"{SITE}/episodes/the-leader-mindset-in-a-shifting-culture-bryan-ottney\", \"datePublished\": \"2022-04-13\", \"timeRequired\": \"PT52M40S\", \"episodeNumber\": 22, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Balance support with challenge",
+   "Check that people are in the right seat",
+   "Say your expectations out loud"
+  ]
  },
  {
   "ep": 21,
@@ -1065,10 +1220,15 @@
   "slug": "intentional-leadership-at-children-of-hope-preschool-nancy-bonson",
   "path": "/episodes/intentional-leadership-at-children-of-hope-preschool-nancy-bonson",
   "meta_title": "Intentional leadership at Children of Hope Preschool: Nancy Bonson",
-  "summary": "",
+  "summary": "Nancy Bonson tells how she started Children of Hope Preschool to serve families caught between affordable and full-price care, and how it grew to include ESL classes for refugee parents.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Intentional leadership at Children of Hope Preschool: Nancy Bonson\", \"url\": \"{SITE}/episodes/intentional-leadership-at-children-of-hope-preschool-nancy-bonson\", \"datePublished\": \"2022-03-16\", \"timeRequired\": \"PT51M28S\", \"episodeNumber\": 18, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Intentional leadership at Children of Hope Preschool: Nancy Bonson\", \"url\": \"{SITE}/episodes/intentional-leadership-at-children-of-hope-preschool-nancy-bonson\", \"datePublished\": \"2022-03-16\", \"timeRequired\": \"PT51M28S\", \"episodeNumber\": 18, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "See a need and ask how you can fill it",
+   "Lead volunteers with grace and paid staff with clear expectations",
+   "Weigh decisions against the whole community, not one person"
+  ]
  },
  {
   "ep": 17,
@@ -1082,10 +1242,15 @@
   "slug": "teaching-painting-and-avoiding-burnout-jerry-cox",
   "path": "/episodes/teaching-painting-and-avoiding-burnout-jerry-cox",
   "meta_title": "Teaching, painting, and avoiding burnout: Jerry Cox",
-  "summary": "",
+  "summary": "Jerry Cox looks back on 42 years of teaching and 35 years of summer painting, and shares why going with your oughts keeps a servant from burning out.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Teaching, painting, and avoiding burnout: Jerry Cox\", \"url\": \"{SITE}/episodes/teaching-painting-and-avoiding-burnout-jerry-cox\", \"datePublished\": \"2022-03-09\", \"timeRequired\": \"PT54M5S\", \"episodeNumber\": 17, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Teaching, painting, and avoiding burnout: Jerry Cox\", \"url\": \"{SITE}/episodes/teaching-painting-and-avoiding-burnout-jerry-cox\", \"datePublished\": \"2022-03-09\", \"timeRequired\": \"PT54M5S\", \"episodeNumber\": 17, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Win a student's heart before their mind",
+   "Go with what you feel you ought to do",
+   "Guard family time while you serve others"
+  ]
  },
  {
   "ep": 16,
@@ -1099,10 +1264,15 @@
   "slug": "what-are-your-5-voices-chris-takes-the-assessment-live",
   "path": "/episodes/what-are-your-5-voices-chris-takes-the-assessment-live",
   "meta_title": "What are your 5 Voices? Chris takes the assessment live",
-  "summary": "",
+  "summary": "Chris takes the 5 Voices assessment live and gets connector, creative, pioneer. Jason and guest Zach Kelly, who shares that voice order, unpack what it means.",
   "substack": "",
   "cohost": true,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"What are your 5 Voices? Chris takes the assessment live\", \"url\": \"{SITE}/episodes/what-are-your-5-voices-chris-takes-the-assessment-live\", \"datePublished\": \"2022-03-02\", \"timeRequired\": \"PT54M45S\", \"episodeNumber\": 16, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"What are your 5 Voices? Chris takes the assessment live\", \"url\": \"{SITE}/episodes/what-are-your-5-voices-chris-takes-the-assessment-live\", \"datePublished\": \"2022-03-02\", \"timeRequired\": \"PT54M45S\", \"episodeNumber\": 16, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "You are a blend of all five voices",
+   "Pair idea people with nurturers and guardians",
+   "Know your tendencies before you lead others"
+  ]
  },
  {
   "ep": 15,
@@ -1116,10 +1286,15 @@
   "slug": "recruiting-for-success-and-the-role-of-prayer-mike-ganly",
   "path": "/episodes/recruiting-for-success-and-the-role-of-prayer-mike-ganly",
   "meta_title": "Recruiting for success and the role of prayer: Mike Ganly",
-  "summary": "",
+  "summary": "Recruiter Mike Ganly shares how he places people in banking jobs, how faith and prayer keep money from becoming his top priority, and why big career moves should not be made from raw emotion.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Recruiting for success and the role of prayer: Mike Ganly\", \"url\": \"{SITE}/episodes/recruiting-for-success-and-the-role-of-prayer-mike-ganly\", \"datePublished\": \"2022-02-23\", \"timeRequired\": \"PT50M55S\", \"episodeNumber\": 15, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Recruiting for success and the role of prayer: Mike Ganly\", \"url\": \"{SITE}/episodes/recruiting-for-success-and-the-role-of-prayer-mike-ganly\", \"datePublished\": \"2022-02-23\", \"timeRequired\": \"PT50M55S\", \"episodeNumber\": 15, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Set goals before you chase a job",
+   "Separate your feelings from the decision",
+   "Talk it through with a mentor you trust"
+  ]
  },
  {
   "ep": 14,
@@ -1167,10 +1342,15 @@
   "slug": "confident-humility-and-the-guardian-voice-jason-kempfs-story",
   "path": "/episodes/confident-humility-and-the-guardian-voice-jason-kempfs-story",
   "meta_title": "Confident humility and the Guardian Voice: Jason Kempf's story",
-  "summary": "",
+  "summary": "Chris interviews Jason Kempf about growing up in New Mexico, a career in church ministry, and starting a coaching business after burnout. The episode opens with a look at the Guardian voice.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Confident humility and the Guardian Voice: Jason Kempf's story\", \"url\": \"{SITE}/episodes/confident-humility-and-the-guardian-voice-jason-kempfs-story\", \"datePublished\": \"2022-02-02\", \"timeRequired\": \"PT47M27S\", \"episodeNumber\": 12, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Confident humility and the Guardian Voice: Jason Kempf's story\", \"url\": \"{SITE}/episodes/confident-humility-and-the-guardian-voice-jason-kempfs-story\", \"datePublished\": \"2022-02-02\", \"timeRequired\": \"PT47M27S\", \"episodeNumber\": 12, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Guardians ask the hard questions that sharpen big ideas",
+   "Notice your own burnout cycle and build healthier rhythms",
+   "Welcome a Guardian's critique and give them room to finish"
+  ]
  },
  {
   "ep": 11,
@@ -1184,10 +1364,15 @@
   "slug": "genuine-relationships-integrity-and-trust-chris-wood",
   "path": "/episodes/genuine-relationships-integrity-and-trust-chris-wood",
   "meta_title": "Genuine relationships, integrity, and trust: Chris Wood",
-  "summary": "",
+  "summary": "Chris Wood is interviewed about his path from HVAC to psychology to running a renovation company, with a look at the Connector voice from the five voices.",
   "substack": "",
   "cohost": true,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Genuine relationships, integrity, and trust: Chris Wood\", \"url\": \"{SITE}/episodes/genuine-relationships-integrity-and-trust-chris-wood\", \"datePublished\": \"2022-01-26\", \"timeRequired\": \"PT45M56S\", \"episodeNumber\": 11, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Genuine relationships, integrity, and trust: Chris Wood\", \"url\": \"{SITE}/episodes/genuine-relationships-integrity-and-trust-chris-wood\", \"datePublished\": \"2022-01-26\", \"timeRequired\": \"PT45M56S\", \"episodeNumber\": 11, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Integrity and trust decide who you work with",
+   "Debrief what went wrong, then keep moving",
+   "Appreciate a Connector first, then bring the challenge"
+  ]
  },
  {
   "ep": 10,
@@ -1201,10 +1386,15 @@
   "slug": "you-dont-need-all-the-solutions-teresa-harwood",
   "path": "/episodes/you-dont-need-all-the-solutions-teresa-harwood",
   "meta_title": "You don't need all the solutions: Teresa Harwood",
-  "summary": "",
+  "summary": "Jason and Chris preview the 5 Voices, then talk with commercial real estate broker Teresa Harwood about specializing, trust, and budgeting for your first office space.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"You don't need all the solutions: Teresa Harwood\", \"url\": \"{SITE}/episodes/you-dont-need-all-the-solutions-teresa-harwood\", \"datePublished\": \"2022-01-19\", \"timeRequired\": \"PT46M33S\", \"episodeNumber\": 10, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"You don't need all the solutions: Teresa Harwood\", \"url\": \"{SITE}/episodes/you-dont-need-all-the-solutions-teresa-harwood\", \"datePublished\": \"2022-01-19\", \"timeRequired\": \"PT46M33S\", \"episodeNumber\": 10, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Stay in your lane and specialize",
+   "Set the budget before you find the space",
+   "A five-minute call with a pro saves research"
+  ]
  },
  {
   "ep": 9,
@@ -1218,10 +1408,15 @@
   "slug": "leading-gen-z-show-you-care-first-with-jason-adler",
   "path": "/episodes/leading-gen-z-show-you-care-first-with-jason-adler",
   "meta_title": "Leading Gen Z: show you care first with Jason Adler",
-  "summary": "",
+  "summary": "Math teacher Jason Adler explains how he leads high schoolers by caring first, making mistakes in front of them, and building a safe place to ask questions, plus why he models limited screen time.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Leading Gen Z: show you care first with Jason Adler\", \"url\": \"{SITE}/episodes/leading-gen-z-show-you-care-first-with-jason-adler\", \"datePublished\": \"2022-01-12\", \"timeRequired\": \"PT53M3S\", \"episodeNumber\": 9, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Leading Gen Z: show you care first with Jason Adler\", \"url\": \"{SITE}/episodes/leading-gen-z-show-you-care-first-with-jason-adler\", \"datePublished\": \"2022-01-12\", \"timeRequired\": \"PT53M3S\", \"episodeNumber\": 9, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "People don't care how much you know until they know you care",
+   "Make it safe to be wrong in front of others",
+   "Model the habits you ask of young people"
+  ]
  },
  {
   "ep": 8,
@@ -1235,10 +1430,15 @@
   "slug": "family-business-mentors-and-listening-kyle-masengale",
   "path": "/episodes/family-business-mentors-and-listening-kyle-masengale",
   "meta_title": "Family business, mentors, and listening: Kyle Masengale",
-  "summary": "",
+  "summary": "Kyle Masengale talks about growing his family's payroll company alongside his dad, building a team, and leaning on mentors and good listening.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Family business, mentors, and listening: Kyle Masengale\", \"url\": \"{SITE}/episodes/family-business-mentors-and-listening-kyle-masengale\", \"datePublished\": \"2021-12-29\", \"timeRequired\": \"PT43M47S\", \"episodeNumber\": 8, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Family business, mentors, and listening: Kyle Masengale\", \"url\": \"{SITE}/episodes/family-business-mentors-and-listening-kyle-masengale\", \"datePublished\": \"2021-12-29\", \"timeRequired\": \"PT43M47S\", \"episodeNumber\": 8, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Let others talk and own your mistakes quickly",
+   "Find mentors outside your own company",
+   "Push back with family, but not so far it breaks the bond"
+  ]
  },
  {
   "ep": 6,
@@ -1286,10 +1486,15 @@
   "slug": "are-you-chasing-the-right-thing-kyle-chudyk",
   "path": "/episodes/are-you-chasing-the-right-thing-kyle-chudyk",
   "meta_title": "Are you chasing the right thing? Kyle Chudyk",
-  "summary": "",
+  "summary": "Kyle Chudyk shares how a video production career, an industry price war, and a missed dance recital led him to buy a garage door franchise.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Are you chasing the right thing? Kyle Chudyk\", \"url\": \"{SITE}/episodes/are-you-chasing-the-right-thing-kyle-chudyk\", \"datePublished\": \"2021-12-01\", \"timeRequired\": \"PT52M16S\", \"episodeNumber\": 4, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Are you chasing the right thing? Kyle Chudyk\", \"url\": \"{SITE}/episodes/are-you-chasing-the-right-thing-kyle-chudyk\", \"datePublished\": \"2021-12-01\", \"timeRequired\": \"PT52M16S\", \"episodeNumber\": 4, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Honesty and integrity outlast shortcuts",
+   "Diversify income so one shock cannot stop you",
+   "Listen to the mentors and parents who know you"
+  ]
  },
  {
   "ep": 3,
@@ -1320,10 +1525,15 @@
   "slug": "opening-a-business-two-months-before-covid-eric-vermilion",
   "path": "/episodes/opening-a-business-two-months-before-covid-eric-vermilion",
   "meta_title": "Opening a business two months before COVID: Eric Vermilion",
-  "summary": "",
+  "summary": "Eric Vermillion left corporate banking to start Vermilion Capital, a commercial loan brokerage, just before COVID hit. He talks about planning finances first and matching borrowers with the right lender.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Opening a business two months before COVID: Eric Vermilion\", \"url\": \"{SITE}/episodes/opening-a-business-two-months-before-covid-eric-vermilion\", \"datePublished\": \"2021-11-17\", \"timeRequired\": \"PT52M23S\", \"episodeNumber\": 2, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Opening a business two months before COVID: Eric Vermilion\", \"url\": \"{SITE}/episodes/opening-a-business-two-months-before-covid-eric-vermilion\", \"datePublished\": \"2021-11-17\", \"timeRequired\": \"PT52M23S\", \"episodeNumber\": 2, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Have a financial plan before leaving a steady job",
+   "Plan for success as seriously as you plan for failure",
+   "Define your own role when you start a business"
+  ]
  },
  {
   "ep": 1,
@@ -1337,9 +1547,14 @@
   "slug": "measuring-success-by-community-impact-jc-wogomon",
   "path": "/episodes/measuring-success-by-community-impact-jc-wogomon",
   "meta_title": "Measuring success by community impact: JC Wogomon",
-  "summary": "",
+  "summary": "JC Wogomon explains how his insurance agency gives a share of revenue to local nonprofits, and why he measures success by community impact instead of net income.",
   "substack": "",
   "cohost": false,
-  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Measuring success by community impact: JC Wogomon\", \"url\": \"{SITE}/episodes/measuring-success-by-community-impact-jc-wogomon\", \"datePublished\": \"2021-11-09\", \"timeRequired\": \"PT43M5S\", \"episodeNumber\": 1, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}"
+  "jsonld": "{\"@context\": \"https://schema.org\", \"@type\": \"PodcastEpisode\", \"name\": \"Measuring success by community impact: JC Wogomon\", \"url\": \"{SITE}/episodes/measuring-success-by-community-impact-jc-wogomon\", \"datePublished\": \"2021-11-09\", \"timeRequired\": \"PT43M5S\", \"episodeNumber\": 1, \"partOfSeries\": {\"@type\": \"PodcastSeries\", \"name\": \"24 Hats Leadership Podcast\", \"url\": \"{SITE}/episodes\"}, \"author\": {\"@type\": \"Person\", \"name\": \"Jason Kempf\", \"url\": \"{SITE}/about\"}}",
+  "takeaways": [
+   "Start giving now, even if it is only ten dollars",
+   "Treat failure as a course correction, not a verdict",
+   "Complacency kills more dreams than failure does"
+  ]
  }
 ]

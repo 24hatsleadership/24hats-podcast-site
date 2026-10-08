@@ -51,6 +51,7 @@ body{margin:0;background:var(--ghost);color:var(--ink);font:18px/1.6 Inter,"Helv
 img{max-width:100%;height:auto}a{color:var(--azure);text-underline-offset:3px}a:hover{color:var(--purple)}
 .skip{position:absolute;left:-999px;top:0;background:var(--purple);color:#fff;padding:.6rem 1rem;z-index:10}.skip:focus{left:0}
 :focus-visible{outline:3px solid var(--azure);outline-offset:3px}
+.take{padding-left:1.2rem}.take li{margin:.35rem 0}
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
 header.site{background:var(--ghost);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
 header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}
@@ -220,12 +221,14 @@ def build():
         desc = short(r["summary"], 155) if r["summary"] else f"Episode {r['ep']} of the {NAME}: {t}."
         d = date.fromisoformat(r["date"]).strftime("%B %-d, %Y")
         who = "Jason Kempf and Chris" if r["cohost"] else "Jason Kempf"
+        tk = r.get("takeaways") or []
+        take = ('<h2>What you will take away</h2><ul class="take">' + "".join(f"<li>{esc(clean(x))}</li>" for x in tk) + "</ul>") if tk else ""
         lead = f'<p class="lead">{esc(clean(r["summary"]))}</p>' if r["summary"] else ""
         rel = "".join(card(x, "../../") for x in related(r))
         body = f"""<div class="wrap"><p class="crumbs"><a href="../../index.html">Home</a> / <a href="../">Episodes</a> / Episode {r['ep']}</p></div>
 <section style="padding-top:24px"><div class="wrap"><article class="ep"><p class="eyebrow">Episode {r['ep']}{' &middot; Co-hosted with Chris' if r['cohost'] else ''}</p><h1>{esc(t)}</h1>{lead}
 <ul class="facts"><li><strong>Published</strong> {d}</li><li><strong>Length</strong> {mins(r)} minutes</li><li><strong>Host</strong> {who}</li></ul>
-<p><a class="btn" href="{listen_href(r)}">Listen to this episode</a><a class="btn ghost" href="{PODCAST_PAGE}">Subscribe to the podcast</a></p></article></div></section>
+{take}<p><a class="btn" href="{listen_href(r)}">Listen to this episode</a><a class="btn ghost" href="{PODCAST_PAGE}">Subscribe to the podcast</a></p></article></div></section>
 <section class="alt"><div class="wrap"><p class="eyebrow">Keep listening</p><h2>More episodes.</h2><div class="grid">{rel}</div></div></section>
 <section><div class="wrap two"><div><h2>Take it into your team.</h2></div><div><p>If this conversation hit close to home, we can talk through what it looks like in your team.</p><p><a class="btn" href="../../work-with-me/">Work with me</a></p></div></div></section>"""
         iso = f"PT{r['minutes']}M"
