@@ -18,6 +18,7 @@ def main():
     root = ET.fromstring(urllib.request.urlopen(req, timeout=30).read())
     data = json.load(open(DATA))
     known = {r["substack"] for r in data if r.get("substack")}
+    latest = max(r["date"] for r in data)
     added = 0
     items = list(root.iter("item"))
     for it in reversed(items):  # oldest first
@@ -32,6 +33,8 @@ def main():
         secs = sum(int(p) * m for p, m in zip(reversed(dur.split(":")), (1, 60, 3600))) if dur.replace(":", "").isdigit() else 0
         from email.utils import parsedate_to_datetime
         d = parsedate_to_datetime(it.findtext("pubDate")).date().isoformat()
+        if d <= latest:  # older than the archive: already handled
+            continue
         ep = max(r["ep"] for r in data) + 1
         slug = slugify(title)
         mins = max(1, round(secs / 60))
