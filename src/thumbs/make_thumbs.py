@@ -11,11 +11,16 @@ def split(r):
     t = r["title"]
     if r["type"] == "Guest" and ": " in t:
         head, guest = t.rsplit(": ", 1)
-        return head, guest
-    if r["type"] == "Guest" and " with " in t:
+    elif r["type"] == "Guest" and " with " in t:
         head, guest = t.rsplit(" with ", 1)
-        return head, guest
-    return t, None
+    else:
+        return t, None
+    if " with " in guest:  # "Title: detail with Guest"
+        pre, guest = guest.rsplit(" with ", 1)
+        head = head + ": " + pre
+    if guest.endswith("'s story"):  # host story, no outside guest
+        return t, None
+    return head, guest
 
 def host_line(r):
     return "Jason Kempf and Chris Wood" if r.get("cohost") else "Jason Kempf"
@@ -60,8 +65,8 @@ h1{{font-size:{fs}px;line-height:1.06;font-weight:800;letter-spacing:-.02em}}.su
 
 STYLES = {"a": style_a, "b": style_b, "c": style_c}
 import random
-def pick(r):  # random but repeatable mix of styles a and c
-    return random.Random(r["ep"] * 7919).choice("ac")
+def pick(r):  # one house style: c (outlined episode number)
+    return "c"
 FIT = {"a": 530, "c": 600}  # max bottom (px) of the title block
 if __name__ == "__main__":
     style, out = sys.argv[1], sys.argv[2]; only = {int(x) for x in sys.argv[3:]}
