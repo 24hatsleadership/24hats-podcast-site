@@ -8,6 +8,15 @@ SITE = os.environ.get("SITE_BASE", "https://24hatsleadership.github.io/24hats-po
 PODCAST_PAGE = "https://24hatsleadership.substack.com/s/24-hats-leadership-podcast"
 YOUTUBE = "https://www.youtube.com/channel/UCubDs-imFumHR6-VOzHVJjw"
 CONTACT = "https://24hats.hbportal.co/schedule/6a0f494d615cc6fc9083c3ab"
+MAIN = "https://www.24hatsleadership.com"
+def _ic(href, label, d): return f'<a href="{href}" aria-label="{label}" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="{d}"/></svg></a>'
+SOCIAL = "".join([
+ _ic("https://www.linkedin.com/in/jason-kempf/", "LinkedIn (Jason Kempf)", "M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7.1 20.4H3.6V9h3.5v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"),
+ _ic("https://www.linkedin.com/company/exanimosolutions/", "LinkedIn (24 Hats Leadership)", "M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7.1 20.4H3.6V9h3.5v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"),
+ _ic(YOUTUBE, "YouTube", "M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 00.5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 002.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 002.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"),
+ _ic("https://open.spotify.com/show/048GcF8xaWL7QTE6LsdtJ3", "Spotify", "M12 0a12 12 0 100 24 12 12 0 000-24zm5.5 17.3a.75.75 0 01-1 .25c-2.8-1.7-6.3-2.1-10.4-1.1a.75.75 0 11-.3-1.5c4.5-1 8.400-.6 11.500 1.300.4.2.5.7.2 1.050zm1.500-3.300a.94.94 0 01-1.300.3c-3.200-2-8.100-2.600-11.800-1.400a.94.94 0 11-.6-1.800c4.300-1.300 9.600-.7 13.300 1.600.4.200.5.800.2 1.300zm.1-3.400C15.300 8.300 9 8.100 5.400 9.200a1.130 1.130 0 11-.7-2.200c4.200-1.300 11.100-1 15.500 1.600a1.130 1.130 0 01-1.100 1.900z"),
+ _ic("https://podcasts.apple.com/us/podcast/leading-is-serving/id1595916045", "Apple Podcasts", "M12 0a12 12 0 100 24 12 12 0 000-24zm0 5.200a5 5 0 013 9.100.600.600 0 01-.900-.500l.300-1.200a3.200 3.200 0 10-4.800 0l.300 1.200a.600.600 0 01-.900.500A5 5 0 0112 5.200zm0 5.100a1.600 1.600 0 110 3.200 1.600 1.600 0 010-3.200zm-1.100 5.500c0-.7.500-1.200 1.100-1.200s1.100.5 1.100 1.200l-.4 3.200c-.1.600-.4.900-.7.900s-.6-.300-.7-.900l-.4-3.200z"),
+])
 NAME = "24 Hats Leadership Podcast"
 TAG = "People focused leadership in a world of disruption."
 esc = html.escape
@@ -45,55 +54,71 @@ def mins(r): return r["minutes"]
 def has_body(r): return bool(r["summary"])
 
 CSS = """
-:root{--purple:#61337e;--purple-light:#a77bc7;--ink:#f3f1f8;--muted:#b8b2c6;--olive:#a3b0a0;--azure:#6db0f5;--btn:#2585e4;--bg:#141118;--surface:#1d1923;--line:#332c3f;color-scheme:dark}
+:root{--mauve:#c3b2c2;--mauve-deep:#756774;--teal:#426770;--teal-light:#8fb7c1;--ink:#f1f1f4;--muted:#b9b9c2;--bg:#222222;--surface:#2a2a2b;--deep:#1a1a1a;--line:#3b3b3d;--purple:#61337e;color-scheme:dark}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 Inter,"Helvetica Neue",Arial,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-img{max-width:100%;height:auto}a{color:var(--azure);text-underline-offset:3px}a:hover{color:#fff}
-.skip{position:absolute;left:-999px;top:0;background:var(--purple);color:#fff;padding:.6rem 1rem;z-index:10}.skip:focus{left:0}
-:focus-visible{outline:3px solid var(--azure);outline-offset:3px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Noto Sans","Helvetica Neue",Arial,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto}a{color:var(--teal-light);text-underline-offset:3px}a:hover{color:#fff}
+.skip{position:absolute;left:-999px;top:0;background:var(--teal);color:#fff;padding:.6rem 1rem;z-index:10}.skip:focus{left:0}
+:focus-visible{outline:3px solid var(--teal-light);outline-offset:3px}
 .take{padding-left:1.2rem}.take li{margin:.35rem 0}
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-header.site{background:var(--bg);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
-header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}
-.brand img{height:40px;width:auto;display:block}
-nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
-nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:16px;padding:6px 0;border-bottom:2px solid transparent}
-nav a:hover,nav a[aria-current=page]{color:#fff;border-color:var(--purple-light)}
-.eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--olive);font-weight:700;margin:0 0 16px}
-h1,h2,h3{line-height:1.08;letter-spacing:-.02em;margin:0 0 .5em;color:var(--ink)}
-h1{font-size:clamp(2.4rem,6vw,4.6rem);font-weight:800}
-h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:800;color:var(--purple-light)}
-h3{font-size:1.35rem;font-weight:700}
-.hero{padding:88px 0 72px;background:radial-gradient(900px 380px at 85% -10%,rgba(97,51,126,.45),transparent 70%)}.hero p.lead{font-size:1.3rem;max-width:34em;color:var(--muted)}
-.rule{width:120px;height:3px;background:var(--purple-light);margin:28px 0 0}
-section{padding:64px 0}.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.btn{display:inline-block;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;padding:14px 26px;border-radius:6px;margin:8px 12px 8px 0;border:2px solid var(--btn)}
-.btn:hover{background:var(--purple);border-color:var(--purple-light);color:#fff}
-.btn.ghost{background:transparent;color:var(--azure);border-color:var(--azure)}.btn.ghost:hover{background:var(--purple);border-color:var(--purple-light);color:#fff}
-.grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
-.card{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--purple-light);border-radius:4px;padding:24px 24px 28px;display:flex;flex-direction:column}
+header.site{background:rgba(34,34,34,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+header.site .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;min-height:84px}
+.brand img{height:42px;width:auto;display:block}
+nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0;flex-wrap:wrap;justify-content:center}
+nav a{color:var(--ink);text-decoration:none;font-weight:500;font-size:15px;padding:6px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a[aria-current=page]{color:#fff;border-color:var(--teal-light)}
+.hdr-cta{justify-self:end}
+.hdr-cta a,.btn{display:inline-flex;align-items:center;gap:10px;background:var(--teal);color:#fff;text-decoration:none;font-weight:700;font-size:15px;letter-spacing:.03em;padding:13px 30px;border-radius:7px;margin:8px 12px 8px 0;border:2px solid var(--teal);box-shadow:0 3px 8px rgba(0,0,0,.35)}
+.hdr-cta a{margin:0;padding:10px 22px;font-size:14px}
+.hdr-cta a:hover,.btn:hover{background:#355760;border-color:var(--teal-light);color:#fff}
+.btn:after,.hdr-cta a:after{content:"\\279C";font-size:.95em}
+.btn.ghost{background:transparent;color:var(--teal-light);border-color:var(--teal-light);box-shadow:none}.btn.ghost:hover{background:var(--teal);color:#fff}
+.eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-light);font-weight:700;margin:0 0 16px}
+h1,h2,h3{line-height:1.12;margin:0 0 .5em;color:var(--mauve)}
+h1{font-size:clamp(2.2rem,5.4vw,4rem);font-weight:700;text-transform:uppercase;color:#fff;letter-spacing:.01em}
+h2{font-size:clamp(1.8rem,3.4vw,2.7rem);font-weight:700}
+h3{font-size:1.3rem;font-weight:700}
+.hero{padding:96px 0 130px;text-align:center;position:relative;background:radial-gradient(800px 360px at 50% 0%,rgba(97,51,126,.5),transparent 70%),linear-gradient(180deg,#3b2d46 0%,#2d2733 100%);clip-path:polygon(0 0,100% 0,100% calc(100% - 44px),50% 100%,0 calc(100% - 44px));margin-bottom:-44px}
+.hero p.lead{font-size:1.2rem;max-width:36em;margin:0 auto;color:#e3e3e8}
+.hero .rule{margin:28px auto 0}.hero .eyebrow{color:#d9c9d8}
+.rule{width:90px;height:3px;background:var(--teal-light);margin:28px 0 0}
+section{padding:72px 0}.alt{background:var(--deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+section.hero{border:0}
+.grid{display:grid;gap:26px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--teal);border-radius:6px;padding:26px 24px 28px;display:flex;flex-direction:column}
 .alt .card{background:var(--bg)}
-.card .meta{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--olive);font-weight:700;margin-bottom:10px}
-.card h3 a{color:var(--ink);text-decoration:none}.card h3 a:hover{color:var(--purple-light)}
-.card p{margin:.4em 0 1em;color:var(--muted);font-size:16px}.card .more{margin-top:auto;font-weight:700;font-size:16px}
-.chip{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:#2c2236;color:var(--purple-light);padding:3px 10px;border-radius:99px;margin-left:8px}
+.card .meta{font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-light);font-weight:700;margin-bottom:10px}
+.card h3{font-size:1.15rem;text-transform:uppercase;letter-spacing:.02em}
+.card h3 a{color:var(--mauve);text-decoration:none}.card h3 a:hover{color:#fff}
+.card p{margin:.4em 0 1em;color:var(--muted);font-size:15.5px}.card .more{margin-top:auto;font-weight:700;font-size:15px}
+.chip{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:#353036;color:var(--mauve);padding:3px 10px;border-radius:99px;margin-left:8px}
 .two{display:grid;gap:48px;grid-template-columns:1fr 1fr}@media(max-width:800px){.two{grid-template-columns:1fr}}
 .listen{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .listen .card p{min-height:3em}
-.quote{border-left:4px solid var(--purple-light);padding:8px 0 8px 24px;font-size:1.5rem;font-weight:700;line-height:1.3;max-width:28em}
-.search{width:100%;max-width:520px;padding:14px 16px;border:2px solid var(--line);border-radius:6px;font:inherit;margin:8px 0 28px;background:var(--surface);color:var(--ink)}
-.search::placeholder{color:#8a8398}
-.search:focus{border-color:var(--azure);outline:none}
-footer.site{background:var(--purple);color:#fff;padding:56px 0 40px;margin-top:0}
-footer.site a{color:#fff}footer.site img{height:44px;width:auto}
-footer.site ul{list-style:none;padding:0;margin:16px 0;display:flex;gap:24px;flex-wrap:wrap}
-footer.site small{opacity:.9}
+.quote{border-left:4px solid var(--teal-light);padding:8px 0 8px 24px;font-size:1.5rem;font-weight:700;line-height:1.3;max-width:28em;color:var(--mauve)}
+.search{width:100%;max-width:520px;padding:14px 16px;border:2px solid var(--line);border-radius:6px;font:inherit;margin:8px 0 28px;background:#3a3a3c;color:#fff}
+.search::placeholder{color:#a5a5ad}.search:focus{border-color:var(--teal-light);outline:none}
+.hero .search{margin-left:auto;margin-right:auto;display:block}
+.getintouch{background:var(--bg);border-top:1px solid var(--line);padding:64px 0}
+.getintouch .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}@media(max-width:800px){.getintouch .wrap{grid-template-columns:1fr}}
+.getintouch .eyebrow{color:rgba(143,183,193,.75);margin:0 0 6px}.getintouch h2{color:var(--teal-light);margin-bottom:.4em}.getintouch p{margin:0 0 1em}
+footer.site{background:var(--deep);border-top:1px solid var(--line);color:var(--ink);padding:44px 0 30px}
+footer.site .cols{display:grid;grid-template-columns:1fr auto 1fr;gap:28px;align-items:center}
+footer.site .cols p{margin:0;font-size:15px;max-width:16em}
+footer.site .cols img{height:64px;width:auto}
+footer.site ul{list-style:none;padding:0;margin:0;text-align:right}footer.site li{margin:2px 0}
+footer.site a{color:var(--ink);text-decoration:none;font-size:15px}footer.site a:hover{color:var(--teal-light)}
+footer.site .social{display:flex;gap:20px;justify-content:center;margin:26px 0 12px}
+footer.site .social svg{width:22px;height:22px;fill:#fff}footer.site .social a:hover svg{fill:var(--teal-light)}
+footer.site small{display:block;text-align:center;color:#8d8d95;font-size:13.5px}footer.site small a{color:#8d8d95;text-decoration:underline}
+@media(max-width:760px){footer.site .cols{grid-template-columns:1fr;text-align:center}footer.site .cols p{margin:0 auto}footer.site ul{text-align:center}}
 .crumbs{font-size:15px;margin:32px 0 0;color:var(--muted)}.crumbs a{font-weight:600}
-article.ep h1{font-size:clamp(2rem,4.6vw,3.4rem)}.ep .lead{font-size:1.3rem;color:var(--muted);max-width:34em}
+article.ep h1{font-size:clamp(1.9rem,4.2vw,3rem)}.ep .lead{font-size:1.2rem;color:var(--muted);max-width:34em}
 .facts{display:flex;gap:24px;flex-wrap:wrap;color:var(--muted);font-size:15px;margin:20px 0 28px;padding:0;list-style:none}
 .facts li strong{color:var(--ink)}
-@media(max-width:700px){header.site .wrap{flex-direction:column;align-items:flex-start;padding-top:12px;padding-bottom:12px}nav ul{gap:18px}.hero{padding:56px 0 48px}section{padding:48px 0}}
-.note{background:var(--surface);border-left:4px solid var(--olive);padding:16px 20px;font-size:16px;color:var(--muted);margin:32px 0}
+@media(max-width:860px){header.site .wrap{grid-template-columns:1fr;justify-items:start;padding-top:12px;padding-bottom:12px;gap:8px}.hdr-cta{justify-self:start}nav ul{gap:18px;justify-content:flex-start}.hero{padding:60px 0 90px}section{padding:52px 0}}
+.note{background:var(--surface);border-left:4px solid var(--teal-light);padding:16px 20px;font-size:16px;color:var(--muted);margin:32px 0}
 """
 
 def nav(prefix, current):
@@ -112,13 +137,15 @@ def page(title, desc, path, body, prefix, current, jsonld=None, robots=None, og_
 <link rel="canonical" href="{canonical}">
 <link rel="icon" href="{prefix}assets/favicon.png"><link rel="apple-touch-icon" href="{prefix}assets/apple-touch-icon.png">
 <meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:type" content="{og_type}"><meta property="og:url" content="{canonical}"><meta property="og:site_name" content="{NAME}">{im}
-<meta name="theme-color" content="#141118"><style>{CSS}</style>{ld}</head>
+<meta name="theme-color" content="#222222"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap"><style>{CSS}</style>{ld}</head>
 <body><a class="skip" href="#main">Skip to content</a>
-<header class="site"><div class="wrap"><a class="brand" href="{prefix}index.html" aria-label="24 Hats Leadership Podcast home"><img src="{prefix}assets/logo-white.png" alt="24 Hats Leadership"></a>{nav(prefix, current)}</div></header>
+<header class="site"><div class="wrap"><a class="brand" href="{prefix}index.html" aria-label="24 Hats Leadership Podcast home"><img src="{prefix}assets/logo-white.png" alt="24 Hats Leadership"></a>{nav(prefix, current)}<div class="hdr-cta"><a href="{CONTACT}">Schedule a Call</a></div></div></header>
 <main id="main">{body}</main>
-<footer class="site"><div class="wrap"><img src="{prefix}assets/logo-white.png" alt="24 Hats Leadership">
-<ul><li><a href="{prefix}index.html">Home</a></li><li><a href="{prefix}about/">About</a></li><li><a href="{prefix}episodes/">Episodes</a></li><li><a href="{prefix}work-with-me/">Work With Me</a></li><li><a href="{PODCAST_PAGE}">Podcast feed</a></li><li><a href="{YOUTUBE}">YouTube</a></li></ul>
-<small>Practical conversations for people-focused leadership.<br>&copy; {date.today().year} 24 Hats Leadership. All rights reserved.</small></div></footer></body></html>"""
+<section class="getintouch"><div class="wrap"><div><p class="eyebrow">Work with me</p><h2>Take it into your team</h2></div><div><p>Ready to unlock your team's full potential? Let's start the conversation about what your people need.</p><a class="btn" href="{CONTACT}" style="margin-left:0">Schedule a Call</a></div></div></section>
+<footer class="site"><div class="wrap"><div class="cols"><p>Unlocking leaders' potential and fighting for their highest good by guiding them towards healthy, present, and productive leadership.</p><a href="{MAIN}" aria-label="24 Hats Leadership main site"><img src="{prefix}assets/logo-white.png" alt="24 Hats Leadership"></a>
+<ul><li><a href="{prefix}index.html">Home</a></li><li><a href="{prefix}episodes/">Episodes</a></li><li><a href="{prefix}about/">About</a></li><li><a href="{prefix}work-with-me/">Work With Me</a></li><li><a href="{MAIN}">24 Hats Leadership</a></li></ul></div>
+<div class="social">{SOCIAL}</div>
+<small>&copy; {date.today().year} 24 Hats Leadership, LLC. Site created by 6 String Creative.</small></div></footer></body></html>"""
 
 def ep_url(r): return f"episodes/{r['slug']}/"
 def listen_href(r): return r["substack"] or PODCAST_PAGE
@@ -170,9 +197,7 @@ def build():
 <section class="alt"><div class="wrap"><p class="eyebrow">Choose your way in</p><h2>Listen wherever you like.</h2>
 <div class="listen"><div class="card"><h3>Apple Podcasts</h3><p>Every episode, on your phone.</p><a class="more" href="{PODCAST_PAGE}">Listen on Apple Podcasts</a></div>
 <div class="card"><h3>Spotify</h3><p>Every episode, in your queue.</p><a class="more" href="{PODCAST_PAGE}">Listen on Spotify</a></div>
-<div class="card"><h3>YouTube</h3><p>Watch the conversations.</p><a class="more" href="{YOUTUBE}">Watch on YouTube</a></div></div></div></section>
-<section><div class="wrap two"><div><p class="eyebrow">Work with me</p><h2>Take the conversation into your team.</h2></div>
-<div><p>The ideas in this podcast are built for the moments when leadership gets real: a team under pressure, a relationship that needs repair, or a culture ready to grow.</p><p><a class="btn" href="work-with-me/">Work with me</a></p></div></div></section>"""
+<div class="card"><h3>YouTube</h3><p>Watch the conversations.</p><a class="more" href="{YOUTUBE}">Watch on YouTube</a></div></div></div></section>"""
     write("index.html", page(f"{NAME} | 24 Hats Leadership", "Practical leadership skills and conversations with leaders building healthy teams and stronger relationships without burning out.", "", home, "", "home", [series, org]))
 
     # ABOUT
@@ -209,10 +234,10 @@ def build():
 
     # EPISODES INDEX
     cards = "".join(card(r, "../") for r in eps)
-    epi = f"""<section class="hero" style="padding-bottom:24px"><div class="wrap"><p class="eyebrow">Season 1 archive</p><h1>Leading Is Serving: the archive.</h1>
+    epi = f"""<section class="hero"><div class="wrap"><p class="eyebrow">Season 1 archive</p><h1>Leading Is Serving: the archive.</h1>
 <p class="lead">Dozens of conversations with business owners, nonprofit leaders, and public servants from Indianapolis and the Southside. Some episodes are co-hosted with Chris. Start anywhere.</p>
 <label for="q" class="eyebrow" style="margin-top:28px;display:block">Search episodes</label><input id="q" class="search" type="search" placeholder="Try &quot;burnout&quot;, &quot;trust&quot;, or a guest name"></div></section>
-<section style="padding-top:8px"><div class="wrap"><div class="grid" id="list">{cards}</div><p id="none" hidden>No episodes match that search.</p></div></section>
+<section><div class="wrap"><div class="grid" id="list">{cards}</div><p id="none" hidden>No episodes match that search.</p></div></section>
 <script>(function(){{var q=document.getElementById('q'),cs=[].slice.call(document.querySelectorAll('#list .card')),n=document.getElementById('none');q.addEventListener('input',function(){{var v=q.value.toLowerCase(),c=0;cs.forEach(function(x){{var m=x.textContent.toLowerCase().indexOf(v)>-1;x.style.display=m?'':'none';if(m)c++}});n.hidden=c>0}})}})();</script>"""
     il = {"@context": "https://schema.org", "@type": "ItemList", "name": "Season 1: Leading Is Serving (archive)", "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": f"{SITE}/{ep_url(r)}", "name": clean(r["title"])} for i, r in enumerate(eps)]}
     write("episodes/index.html", page("Episodes: the Leading Is Serving archive | 24 Hats Leadership Podcast", "Browse Season 1 of the 24 Hats Leadership Podcast: conversations with business owners, nonprofit leaders, and public servants from Indianapolis.", "episodes/", epi, "../", "episodes", [il]))
@@ -235,7 +260,7 @@ def build():
 <ul class="facts"><li><strong>Published</strong> {d}</li><li><strong>Length</strong> {mins(r)} minutes</li><li><strong>Host</strong> {who}</li></ul>
 {take}<p><a class="btn" href="{listen_href(r)}">Listen to this episode</a><a class="btn ghost" href="{PODCAST_PAGE}">Subscribe to the podcast</a></p></article></div></section>
 <section class="alt"><div class="wrap"><p class="eyebrow">Keep listening</p><h2>More episodes.</h2><div class="grid">{rel}</div></div></section>
-<section><div class="wrap two"><div><h2>Take it into your team.</h2></div><div><p>If this conversation hit close to home, we can talk through what it looks like in your team.</p><p><a class="btn" href="../../work-with-me/">Work with me</a></p></div></div></section>"""
+"""
         iso = f"PT{r['minutes']}M"
         ld = {"@context": "https://schema.org", "@type": "PodcastEpisode", "name": t, "url": f"{SITE}/{ep_url(r)}", "datePublished": r["date"], "timeRequired": iso, "episodeNumber": r["ep"], "partOfSeries": {"@type": "PodcastSeries", "name": NAME, "url": f"{SITE}/episodes/"}, "author": {"@type": "Person", "name": "Jason Kempf", "url": f"{SITE}/about/"}, "inLanguage": "en-US"}
         if r["summary"]: ld["description"] = clean(r["summary"])
