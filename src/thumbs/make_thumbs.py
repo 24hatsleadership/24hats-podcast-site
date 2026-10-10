@@ -13,6 +13,9 @@ def split(r):
         head, guest = t.rsplit(": ", 1)
     elif r["type"] == "Guest" and " with " in t:
         head, guest = t.rsplit(" with ", 1)
+    elif r["type"] == "Guest" and "? " in t:
+        head, guest = t.rsplit("? ", 1)
+        head += "?"
     else:
         return t, None
     if " with " in guest:  # "Title: detail with Guest"
@@ -23,7 +26,8 @@ def split(r):
     return head, guest
 
 def host_line(r):
-    return "Jason Kempf and Chris Wood" if r.get("cohost") else "Jason Kempf"
+    both = r.get("cohost") or r["type"] == "Hosts" or r["ep"] == 12  # non-interview episodes are Jason and Chris
+    return "Jason Kempf and Chris Wood" if both else "Jason Kempf"
 
 def initials(g):
     parts = [p for p in g.replace(" and ", " ").split() if p[0].isupper() and not p.endswith(".")]
