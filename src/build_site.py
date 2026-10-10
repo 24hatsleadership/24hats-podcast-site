@@ -118,6 +118,29 @@ article.ep h1{font-size:clamp(1.9rem,4.2vw,3rem)}.ep .lead{font-size:1.2rem;colo
 .facts{display:flex;gap:24px;flex-wrap:wrap;color:var(--muted);font-size:15px;margin:20px 0 28px;padding:0;list-style:none}
 .facts li strong{color:var(--ink)}
 @media(max-width:860px){header.site .wrap{grid-template-columns:1fr;justify-items:start;padding-top:12px;padding-bottom:12px;gap:8px}.hdr-cta{justify-self:start}nav ul{gap:18px;justify-content:flex-start}.hero{padding:60px 0 90px}section{padding:52px 0}}
+.hero>.wrap,.alt>.wrap,.getintouch>.wrap,footer.site>.wrap{position:relative;z-index:1}
+.hero::before,.alt::before,.getintouch::before,footer.site::before{content:"";position:absolute;inset:0;background:var(--tex) center/cover no-repeat;pointer-events:none}
+.hero::before{opacity:.32;mix-blend-mode:luminosity}
+.hero.photo::before{opacity:.55;mix-blend-mode:normal;background-position:center 40%}
+.hero.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,26,40,.78) 0%,rgba(45,39,51,.55) 55%,rgba(34,34,34,.85) 100%);pointer-events:none}
+.hero.photo>.wrap{z-index:2}
+.hero h1,.hero p.lead{text-shadow:0 2px 14px rgba(0,0,0,.55)}
+.alt,.getintouch,footer.site{position:relative;overflow:hidden}
+.alt::before{--tex:url(@P@assets/img/tex-brick-black.jpg);opacity:.5}
+.getintouch::before{--tex:url(@P@assets/img/tex-brick-warm.jpg);opacity:.3}
+footer.site::before{--tex:url(@P@assets/img/tex-wood-navy.jpg);opacity:.22}
+.hero.t-brick{--tex:url(@P@assets/img/tex-brick-warm.jpg)}
+.hero.t-wood{--tex:url(@P@assets/img/tex-wood-brown.jpg)}
+.hero.t-black{--tex:url(@P@assets/img/tex-brick-black.jpg)}
+.hero.photo{--tex:url(@P@assets/img/hero-mic.jpg)}
+.strip{display:grid;gap:18px;grid-template-columns:repeat(3,1fr);margin-top:30px}
+.strip figure{margin:0;border-radius:8px;overflow:hidden;border:1px solid var(--line);box-shadow:0 8px 22px rgba(0,0,0,.4);aspect-ratio:4/3}
+.strip img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.strip figure:hover img{transform:scale(1.05)}
+.sidephoto{border-radius:8px;border:1px solid var(--line);box-shadow:0 10px 26px rgba(0,0,0,.45);width:100%;max-height:420px;object-fit:cover;margin-top:24px}
+.card{box-shadow:0 6px 18px rgba(0,0,0,.28);transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(0,0,0,.4)}
+@media(max-width:700px){.strip{grid-template-columns:1fr}.strip figure{aspect-ratio:16/9}}
+@media(prefers-reduced-motion:reduce){.card,.strip img{transition:none}}
 .note{background:var(--surface);border-left:4px solid var(--teal-light);padding:16px 20px;font-size:16px;color:var(--muted);margin:32px 0}
 """
 
@@ -137,7 +160,7 @@ def page(title, desc, path, body, prefix, current, jsonld=None, robots=None, og_
 <link rel="canonical" href="{canonical}">
 <link rel="icon" href="{prefix}assets/favicon.png"><link rel="apple-touch-icon" href="{prefix}assets/apple-touch-icon.png">
 <meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:type" content="{og_type}"><meta property="og:url" content="{canonical}"><meta property="og:site_name" content="{NAME}">{im}
-<meta name="theme-color" content="#222222"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap"><style>{CSS}</style>{ld}</head>
+<meta name="theme-color" content="#222222"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap"><style>{CSS.replace("@P@", prefix)}</style>{ld}</head>
 <body><a class="skip" href="#main">Skip to content</a>
 <header class="site"><div class="wrap"><a class="brand" href="{prefix}index.html" aria-label="24 Hats Leadership Podcast home"><img src="{prefix}assets/logo-white.png" alt="24 Hats Leadership"></a>{nav(prefix, current)}<div class="hdr-cta"><a href="{CONTACT}">Schedule a Call</a></div></div></header>
 <main id="main">{body}</main>
@@ -174,6 +197,7 @@ def build():
     shutil.copy(f"{UP}/e765a83b-image.png", f"{OUT}/assets/logo-white.png")
     shutil.copytree(os.path.join(ROOT,"thumbs","out"), f"{OUT}/assets/thumbs")
     shutil.copytree(os.path.join(ROOT,"thumbs","out_sq"), f"{OUT}/assets/thumbs-square")
+    shutil.copytree(os.path.join(ROOT,"static","img"), f"{OUT}/assets/img")
     from PIL import Image
     ic = Image.open(f"{UP}/44857693-image.png").convert("RGBA")
     bbox = ic.getbbox(); ic = ic.crop(bbox)
@@ -186,14 +210,17 @@ def build():
 
     # HOME
     feat = [by_ep[n] for n in (86, 70, 49)]
-    home = f"""<section class="hero"><div class="wrap"><p class="eyebrow">24 Hats Leadership Podcast</p><h1>{TAG}</h1>
+    home = f"""<section class="hero photo"><div class="wrap"><p class="eyebrow">24 Hats Leadership Podcast</p><h1>{TAG}</h1>
 <p class="lead">Practical leadership skills and conversations with leaders building healthy teams and stronger relationships without burning out.</p><div class="rule"></div>
 <p style="margin-top:32px"><a class="btn" href="{PODCAST_PAGE}">Listen to the podcast</a><a class="btn ghost" href="episodes/">Browse all episodes</a></p></div></section>
 <section class="alt"><div class="wrap two"><div><p class="eyebrow">The show</p><h2>Leadership that keeps people at the center.</h2></div>
 <div><p>Useful ideas for the everyday work of leading well. Each episode gives you something to try in an ordinary working relationship, not a theory to admire.</p>
-<p>Season 1 ("Leading Is Serving") holds dozens of conversations with business owners, nonprofit leaders, and public servants from Indianapolis and the Southside. Some archive episodes are co-hosted with Chris.</p></div></div></section>
+<p>Season 1 ("Leading Is Serving") holds dozens of conversations with business owners, nonprofit leaders, and public servants from Indianapolis and the Southside. Some archive episodes are co-hosted with Chris.</p>
+<img class="sidephoto" src="assets/img/mic-boom.jpg" alt="Black broadcast microphone on a studio boom arm" loading="lazy"></div></div></section>
 <section><div class="wrap"><p class="eyebrow">Start here</p><h2>Conversations worth carrying into Monday.</h2>
 <div class="grid">{''.join(card(r, '') for r in feat)}</div><p style="margin-top:28px"><a href="episodes/"><strong>View the complete archive</strong></a></p></div></section>
+<section><div class="wrap"><p class="eyebrow">Behind the mic</p><h2>Real conversations, recorded with care.</h2>
+<div class="strip"><figure><img src="assets/img/mic-amber.jpg" alt="Dynamic microphone against a warm amber backdrop" loading="lazy"></figure><figure><img src="assets/img/mic-desk.jpg" alt="Condenser microphone with headphones and a monitor on a desk" loading="lazy"></figure><figure><img src="assets/img/mic-chrome.jpg" alt="Vintage chrome microphone on a purple gradient" loading="lazy"></figure></div></div></section>
 <section class="alt"><div class="wrap"><p class="eyebrow">Choose your way in</p><h2>Listen wherever you like.</h2>
 <div class="listen"><div class="card"><h3>Apple Podcasts</h3><p>Every episode, on your phone.</p><a class="more" href="{PODCAST_PAGE}">Listen on Apple Podcasts</a></div>
 <div class="card"><h3>Spotify</h3><p>Every episode, in your queue.</p><a class="more" href="{PODCAST_PAGE}">Listen on Spotify</a></div>
@@ -201,7 +228,7 @@ def build():
     write("index.html", page(f"{NAME} | 24 Hats Leadership", "Practical leadership skills and conversations with leaders building healthy teams and stronger relationships without burning out.", "", home, "", "home", [series, org]))
 
     # ABOUT
-    about = f"""<section class="hero"><div class="wrap"><p class="eyebrow">About 24 Hats Leadership</p><h1>Jason Kempf</h1>
+    about = f"""<section class="hero t-wood"><div class="wrap"><p class="eyebrow">About 24 Hats Leadership</p><h1>Jason Kempf</h1>
 <p class="lead">Founder of 24 Hats Leadership and host of the {NAME}.</p><div class="rule"></div></div></section>
 <section class="alt"><div class="wrap two"><div><p class="eyebrow">A note from Jason</p><h2>A practical reason to keep talking about leadership.</h2></div>
 <div><p>I make this podcast because leadership gets talked about in ways that can feel far removed from an actual Tuesday at work.</p>
@@ -219,7 +246,7 @@ def build():
     write("about/index.html", page("About Jason Kempf | 24 Hats Leadership Podcast", "Jason Kempf is the founder of 24 Hats Leadership and host of the 24 Hats Leadership Podcast, on practical, people-focused leadership.", "about/", about, "../", "about", [person]))
 
     # WORK WITH ME
-    work = f"""<section class="hero"><div class="wrap"><p class="eyebrow">Work with 24 Hats Leadership</p><h1>Let's make leadership more workable.</h1>
+    work = f"""<section class="hero t-black"><div class="wrap"><p class="eyebrow">Work with 24 Hats Leadership</p><h1>Let's make leadership more workable.</h1>
 <p class="lead">If you're leading a team, strengthening relationships, or navigating a difficult leadership situation, we can make space to understand what's happening and find a useful way forward.</p>
 <p><a class="btn" href="{CONTACT}">Book a conversation</a></p></div></section>
 <section class="alt"><div class="wrap"><p class="eyebrow">Ways to work together</p><h2>Two ways to move forward.</h2>
@@ -234,7 +261,7 @@ def build():
 
     # EPISODES INDEX
     cards = "".join(card(r, "../") for r in eps)
-    epi = f"""<section class="hero"><div class="wrap"><p class="eyebrow">Season 1 archive</p><h1>Leading Is Serving: the archive.</h1>
+    epi = f"""<section class="hero t-brick"><div class="wrap"><p class="eyebrow">Season 1 archive</p><h1>Leading Is Serving: the archive.</h1>
 <p class="lead">Dozens of conversations with business owners, nonprofit leaders, and public servants from Indianapolis and the Southside. Some episodes are co-hosted with Chris. Start anywhere.</p>
 <label for="q" class="eyebrow" style="margin-top:28px;display:block">Search episodes</label><input id="q" class="search" type="search" placeholder="Try &quot;burnout&quot;, &quot;trust&quot;, or a guest name"></div></section>
 <section><div class="wrap"><div class="grid" id="list">{cards}</div><p id="none" hidden>No episodes match that search.</p></div></section>
