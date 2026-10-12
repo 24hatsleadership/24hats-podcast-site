@@ -2,7 +2,7 @@
 Prints the number of episodes added. New pages are noindex until a human reviews the PR."""
 import json, re, sys, html, urllib.request
 import xml.etree.ElementTree as ET
-FEED = "https://24hatsleadership.substack.com/feed"
+FEED = "https://api.substack.com/feed/podcast/11572992/s/475665.rss"
 DATA = "src/data/episodes_pages.json"
 NS = {"itunes": "http://www.itunes.com/dtds/podcast-1.0.dtd", "content": "http://purl.org/rss/1.0/modules/content/"}
 
