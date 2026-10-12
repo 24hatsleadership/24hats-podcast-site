@@ -15,8 +15,12 @@ jobs:
         with:
           python-version: "3.12"
       - id: feed
-        run: echo "added=$(python scripts/check_feed.py)" >> "$GITHUB_OUTPUT"
-      - if: steps.feed.outputs.added != '0'
+        run: |
+          set -euo pipefail
+          n=$(python scripts/check_feed.py)
+          echo "feed check added: $n"
+          echo "added=$n" >> "$GITHUB_OUTPUT"
+      - if: steps.feed.outputs.added != '' && steps.feed.outputs.added != '0'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
