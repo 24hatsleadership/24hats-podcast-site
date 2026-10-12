@@ -121,6 +121,8 @@ article.ep h1{font-size:clamp(1.9rem,4.2vw,3rem)}.ep .lead{font-size:1.2rem;colo
 .hero>.wrap,.alt>.wrap,.getintouch>.wrap,footer.site>.wrap{position:relative;z-index:1}
 .hero.photo::before{content:"";position:absolute;inset:0;background:var(--tex) center/cover no-repeat;pointer-events:none}
 .hero.photo::before{opacity:.55;mix-blend-mode:normal;background-position:center 40%}
+.alt{background:radial-gradient(900px 320px at 90% 0%,rgba(66,103,112,.2),transparent 70%),var(--deep)}
+.getintouch{background:linear-gradient(120deg,#1f2e32 0%,#222 55%,#2b2430 100%)}
 .hero.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,26,40,.78) 0%,rgba(45,39,51,.55) 55%,rgba(34,34,34,.85) 100%);pointer-events:none}
 .hero.photo>.wrap{z-index:2}
 .hero h1,.hero p.lead{text-shadow:0 2px 14px rgba(0,0,0,.55)}
